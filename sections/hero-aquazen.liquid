@@ -1,0 +1,11 @@
+<section class="hero" style="--hero-image:url('{% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 2400 }}{% else %}{{ 'aquazen-hero.png' | asset_url }}{% endif %}')">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+    <h1>{{ section.settings.heading | newline_to_br }}</h1><p class="hero-text">{{ section.settings.text }}</p>
+    <div class="quick-features"><span>◉<b>BPA Free</b></span><span>❄<b>24H Cold</b></span><span>♨<b>12H Hot</b></span><span>◇<b>Premium quality</b></span></div>
+    <a class="button" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }} <i>→</i></a>
+    <div class="social-proof"><div class="avatars"><i></i><i></i><i></i></div><div><strong class="stars">★★★★★</strong><br><b>4.8/5</b> from 10,000+ happy customers</div></div>
+  </div>
+  <div class="impact-note">Small<br>Changes<br><em>Big Impact</em></div><div class="sustainable">♣<strong>SUSTAINABLE</strong><small>FOR A GREENER<br>TOMORROW</small></div>
+</section>
+{% schema %}{"name":"AquaZen hero","settings":[{"type":"image_picker","id":"image","label":"Hero image"},{"type":"text","id":"eyebrow","label":"Eyebrow","default":"HYDRATE A BRIGHTER YOU"},{"type":"textarea","id":"heading","label":"Heading","default":"Pure Hydration\nFor A Better\nTomorrow"},{"type":"textarea","id":"text","label":"Text","default":"Stay refreshed, stay focused. A premium bottle designed for your everyday adventures."},{"type":"text","id":"button_label","label":"Button label","default":"Shop Now"},{"type":"url","id":"button_link","label":"Button link"}]}{% endschema %}

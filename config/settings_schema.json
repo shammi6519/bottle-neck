@@ -1,0 +1,3 @@
+[
+  {"name":"Theme settings","settings":[{"type":"color","id":"accent_color","label":"Accent color","default":"#294b30"},{"type":"text","id":"brand_tagline","label":"Brand tagline","default":"Hydration for every moment"}]}
+]
