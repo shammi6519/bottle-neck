@@ -1,0 +1,174 @@
+<section class="up-product" data-section-id="{{ section.id }}">
+  <div class="up-product__grid">
+    <div class="up-product__media">
+      <div class="up-product__stage">
+        {% if product.featured_media %}
+          {% for media in product.media %}
+            {% assign media_alt = media.alt | default: product.title %}
+            <figure class="up-product__figure{% if forloop.first %} is-active{% endif %}" data-media-id="{{ media.id }}">
+              {{ media | image_url: width: 1400 | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 54vw, 100vw', widths: '360, 540, 720, 960, 1200, 1400', alt: media_alt }}
+            </figure>
+          {% endfor %}
+        {% else %}
+          <figure class="up-product__figure is-active up-product__placeholder">{{ 'product-1' | placeholder_svg_tag }}</figure>
+        {% endif %}
+      </div>
+      {% if product.media.size > 1 %}
+        <div class="up-product__thumbs" aria-label="Product gallery thumbnails">
+          {% for media in product.media %}
+            {% assign thumb_alt = media.alt | default: product.title %}
+            <button type="button" class="up-product__thumb{% if forloop.first %} is-active{% endif %}" data-media-id="{{ media.id }}" aria-label="Show image {{ forloop.index }}">
+              {{ media | image_url: width: 180 | image_tag: loading: 'lazy', widths: '90, 140, 180', alt: thumb_alt }}
+            </button>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="up-product__info">
+      {% if section.settings.show_vendor and product.vendor != blank %}<p class="up-product__vendor">{{ product.vendor }}</p>{% endif %}
+      <h1>{{ product.title }}</h1>
+      <div class="up-product__rating" aria-label="Rated 4.8 out of 5 stars">
+        <span>{% render 'az-icon', name: 'star' %}{% render 'az-icon', name: 'star' %}{% render 'az-icon', name: 'star' %}{% render 'az-icon', name: 'star' %}{% render 'az-icon', name: 'star' %}</span>
+        <b>4.8/5</b>
+        <small>{{ section.settings.review_text }}</small>
+      </div>
+
+      <div class="up-product__price" data-price-wrap>
+        <span data-price>{{ product.selected_or_first_available_variant.price | money }}</span>
+        {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+          <del data-compare>{{ product.selected_or_first_available_variant.compare_at_price | money }}</del>
+        {% else %}
+          <del data-compare hidden></del>
+        {% endif %}
+      </div>
+
+      {% if product.description != blank %}
+        <div class="up-product__summary">{{ product.description | strip_html | truncatewords: 38 }}</div>
+      {% endif %}
+
+      {% form 'product', product, class: 'up-product__form' %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" data-variant-id>
+
+        {% unless product.has_only_default_variant %}
+          <div class="up-product__options">
+            {% for option in product.options_with_values %}
+              <fieldset class="up-product__option" data-option-position="{{ option.position }}">
+                <legend>{{ option.name }}: <span data-option-label="{{ option.position }}">{{ option.selected_value }}</span></legend>
+                <div class="up-product__values">
+                  {% for value in option.values %}
+                    {% assign input_id = section.id | append: '-' | append: option.position | append: '-' | append: forloop.index %}
+                    <label class="up-product__pill" for="{{ input_id }}">
+                      <input id="{{ input_id }}" type="radio" name="options[{{ option.name | escape }}]" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
+                      <span>{{ value }}</span>
+                    </label>
+                  {% endfor %}
+                </div>
+              </fieldset>
+            {% endfor %}
+          </div>
+        {% endunless %}
+
+        <div class="up-product__buy-row">
+          <label class="up-product__qty">Qty <input type="number" name="quantity" value="1" min="1"></label>
+          <button class="up-product__cart" type="submit" name="add" {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %} data-add-button>
+            {% render 'az-icon', name: 'cart' %}<span data-add-text>{% if product.selected_or_first_available_variant.available %}Add to Cart{% else %}Sold Out{% endif %}</span>
+          </button>
+        </div>
+        {{ form | payment_button }}
+      {% endform %}
+
+      <div class="up-product__trust">
+        <span>{% render 'az-icon', name: 'truck' %}<b>{{ section.settings.trust_1 }}</b></span>
+        <span>{% render 'az-icon', name: 'shield' %}<b>{{ section.settings.trust_2 }}</b></span>
+        <span>{% render 'az-icon', name: 'heart' %}<b>{{ section.settings.trust_3 }}</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="up-product__below">
+    <div class="up-product__tabs">
+      <details open><summary>Product Description</summary><div>{{ product.description | default: section.settings.fallback_description }}</div></details>
+      <details><summary>Shipping & Returns</summary><div>{{ section.settings.shipping_text }}</div></details>
+      <details><summary>Care & Materials</summary><div>{{ section.settings.care_text }}</div></details>
+    </div>
+    <aside class="up-product__side-card">
+      <h2>{{ section.settings.side_heading }}</h2>
+      <ul>
+        <li>{% render 'az-icon', name: 'check' %} Quality checked before shipping</li>
+        <li>{% render 'az-icon', name: 'check' %} Designed for everyday use</li>
+        <li>{% render 'az-icon', name: 'check' %} Secure checkout experience</li>
+      </ul>
+    </aside>
+  </div>
+
+  <script type="application/json" data-product-json>{{ product.variants | json }}</script>
+  <script>
+    (() => {
+      const root = document.currentScript.closest('.up-product');
+      if (!root || root.dataset.ready) return;
+      root.dataset.ready = 'true';
+      const moneyFormat = {{ shop.money_format | json }};
+      const variants = JSON.parse(root.querySelector('[data-product-json]').textContent || '[]');
+      const formatMoney = cents => {
+        if (window.Shopify && Shopify.formatMoney) return Shopify.formatMoney(cents, moneyFormat);
+        return new Intl.NumberFormat(undefined, { style: 'currency', currency: {{ cart.currency.iso_code | json }} }).format(cents / 100);
+      };
+      const showMedia = id => {
+        if (!id) return;
+        root.querySelectorAll('[data-media-id]').forEach(el => el.classList.toggle('is-active', String(el.dataset.mediaId) === String(id)));
+      };
+      root.querySelectorAll('.up-product__thumb').forEach(btn => btn.addEventListener('click', () => showMedia(btn.dataset.mediaId)));
+      const getOptions = () => [...root.querySelectorAll('.up-product__option')].map(group => {
+        const checked = group.querySelector('input:checked');
+        return checked ? checked.value : '';
+      });
+      const syncVariant = () => {
+        const chosen = getOptions();
+        const variant = variants.find(item => item.options.every((option, index) => option === chosen[index])) || variants[0];
+        if (!variant) return;
+        const idInput = root.querySelector('[data-variant-id]');
+        const addButton = root.querySelector('[data-add-button]');
+        const addText = root.querySelector('[data-add-text]');
+        const price = root.querySelector('[data-price]');
+        const compare = root.querySelector('[data-compare]');
+        idInput.value = variant.id;
+        price.textContent = formatMoney(variant.price);
+        if (variant.compare_at_price && variant.compare_at_price > variant.price) {
+          compare.hidden = false;
+          compare.textContent = formatMoney(variant.compare_at_price);
+        } else {
+          compare.hidden = true;
+          compare.textContent = '';
+        }
+        addButton.disabled = !variant.available;
+        addText.textContent = variant.available ? 'Add to Cart' : 'Sold Out';
+        if (variant.featured_media && variant.featured_media.id) showMedia(variant.featured_media.id);
+      };
+      root.querySelectorAll('.up-product__option input').forEach(input => input.addEventListener('change', event => {
+        const group = event.target.closest('.up-product__option');
+        const label = root.querySelector('[data-option-label="' + group.dataset.optionPosition + '"]');
+        if (label) label.textContent = event.target.value;
+        syncVariant();
+      }));
+    })();
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Universal product page",
+  "settings": [
+    { "type": "checkbox", "id": "show_vendor", "label": "Show vendor", "default": true },
+    { "type": "text", "id": "review_text", "label": "Review text", "default": "Customer favorite" },
+    { "type": "text", "id": "trust_1", "label": "Trust item 1", "default": "Free shipping" },
+    { "type": "text", "id": "trust_2", "label": "Trust item 2", "default": "30-day returns" },
+    { "type": "text", "id": "trust_3", "label": "Trust item 3", "default": "Secure checkout" },
+    { "type": "richtext", "id": "fallback_description", "label": "Fallback description", "default": "<p>A thoughtfully designed product made for daily use.</p>" },
+    { "type": "richtext", "id": "shipping_text", "label": "Shipping text", "default": "<p>Orders ship quickly with tracking. Returns are accepted within 30 days when products are unused and in original condition.</p>" },
+    { "type": "richtext", "id": "care_text", "label": "Care text", "default": "<p>Follow the care instructions included with your product to keep it looking and performing at its best.</p>" },
+    { "type": "text", "id": "side_heading", "label": "Side card heading", "default": "Why customers choose us" }
+  ],
+  "presets": [{ "name": "Universal product page" }]
+}
+{% endschema %}

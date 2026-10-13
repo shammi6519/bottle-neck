@@ -1,0 +1,161 @@
+{% liquid
+  assign featured_collection = section.settings.featured_collection | default: collections['all']
+  assign shop_link = section.settings.shop_link | default: featured_collection.url | default: routes.all_products_collection_url
+  assign hero_image = section.settings.hero_image
+  assign offer_image = section.settings.offer_image
+%}
+
+<div class="nx-home">
+  <section class="nx-hero" aria-labelledby="nx-hero-title">
+    {% if hero_image != blank %}
+      {{ hero_image | image_url: width: 2200 | image_tag: class: 'nx-hero__image', loading: 'eager', fetchpriority: 'high', alt: '' }}
+    {% else %}
+      <img class="nx-hero__image" src="{{ 'nexora-hero.webp' | asset_url }}" alt="" width="1983" height="793" fetchpriority="high">
+    {% endif %}
+    <div class="nx-hero__inner nx-container">
+      <div class="nx-hero__copy">
+        <p class="nx-kicker">{{ section.settings.hero_eyebrow | escape }}</p>
+        <h1 id="nx-hero-title">{{ section.settings.hero_heading | escape | newline_to_br }}</h1>
+        <p class="nx-hero__description">{{ section.settings.hero_text | escape }}</p>
+        <a class="nx-button nx-button--dark" href="{{ shop_link }}">{{ section.settings.hero_button | escape }} {% render 'az-icon', name: 'arrow-right' %}</a>
+      </div>
+    </div>
+    <div class="nx-hero__dots" aria-hidden="true"><span class="is-current"></span><span></span><span></span></div>
+  </section>
+
+  <section class="nx-categories nx-container" id="categories" aria-label="Shop by category">
+    {% for block in section.blocks %}
+      {% if block.type == 'category' %}
+        {% liquid
+          assign category_link = block.settings.collection.url | default: shop_link
+          assign category_image = block.settings.image | default: block.settings.collection.image
+          assign fallback_name = 'nexora-watch.webp'
+          case forloop.index
+            when 2
+              assign fallback_name = 'nexora-earbuds.webp'
+            when 3
+              assign fallback_name = 'nexora-charger.webp'
+            when 4
+              assign fallback_name = 'nexora-bottle.webp'
+          endcase
+        %}
+        <a class="nx-category" href="{{ category_link }}" {{ block.shopify_attributes }}>
+          {% if category_image != blank %}
+            {{ category_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: block.settings.title }}
+          {% else %}
+            <img src="{{ fallback_name | asset_url }}" alt="" width="627" height="627" loading="lazy">
+          {% endif %}
+          <span>{{ block.settings.title | escape }} {% render 'az-icon', name: 'arrow-right' %}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <section class="nx-featured nx-container" id="best-sellers" aria-labelledby="nx-featured-title">
+    <div class="nx-section-heading">
+      <div><p class="nx-kicker">{{ section.settings.featured_eyebrow | escape }}</p><h2 id="nx-featured-title">{{ section.settings.featured_heading | escape }}</h2></div>
+      <a href="{{ featured_collection.url | default: shop_link }}">View All {% render 'az-icon', name: 'arrow-right' %}</a>
+    </div>
+    {% if featured_collection != blank and featured_collection.products_count > 0 %}
+      <div class="nx-product-grid">
+        {% for product in featured_collection.products limit: 4 %}
+          <article class="nx-product">
+            <a class="nx-product__image" href="{{ product.url }}">
+              {% if product.featured_image != blank %}
+                {{ product.featured_image | image_url: width: 760 | image_tag: loading: 'lazy', alt: product.featured_image.alt }}
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+              {% endif %}
+            </a>
+            <a class="nx-product__title" href="{{ product.url }}">{{ product.title | escape }}</a>
+            <p class="nx-product__price">{{ product.price | money }}{% if product.compare_at_price > product.price %} <s>{{ product.compare_at_price | money }}</s>{% endif %}</p>
+            {% if product.options_with_values.size > 0 %}
+              {% for option in product.options_with_values %}
+                {% assign option_name = option.name | downcase %}
+                {% if option_name contains 'color' or option_name contains 'colour' %}
+                  <div class="nx-product__colors" aria-label="Available {{ option.name | escape }} options">
+                    {% for value in option.values limit: 4 %}
+                      {% assign color_name = value | downcase %}
+                      {% assign swatch_color = '#b9b9b9' %}
+                      {% if color_name contains 'black' %}{% assign swatch_color = '#171719' %}
+                      {% elsif color_name contains 'white' or color_name contains 'cream' %}{% assign swatch_color = '#f1f0eb' %}
+                      {% elsif color_name contains 'green' or color_name contains 'olive' %}{% assign swatch_color = '#5d694f' %}
+                      {% elsif color_name contains 'blue' %}{% assign swatch_color = '#53677a' %}
+                      {% elsif color_name contains 'brown' or color_name contains 'tan' %}{% assign swatch_color = '#b59b85' %}
+                      {% elsif color_name contains 'gray' or color_name contains 'grey' or color_name contains 'silver' %}{% assign swatch_color = '#8f9294' %}{% endif %}
+                      <span title="{{ value | escape }}" style="--nx-swatch: {{ swatch_color }}"></span>
+                    {% endfor %}
+                  </div>
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="nx-product-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'category' %}
+            {% liquid
+              assign fallback_name = 'nexora-watch.webp'
+              case forloop.index
+                when 2
+                  assign fallback_name = 'nexora-earbuds.webp'
+                when 3
+                  assign fallback_name = 'nexora-charger.webp'
+                when 4
+                  assign fallback_name = 'nexora-bottle.webp'
+              endcase
+              assign category_link = block.settings.collection.url | default: shop_link
+            %}
+            <article class="nx-product"><a class="nx-product__image" href="{{ category_link }}"><img src="{{ fallback_name | asset_url }}" alt="" width="627" height="627" loading="lazy"></a><a class="nx-product__title" href="{{ category_link }}">Explore {{ block.settings.title | escape }}</a></article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="nx-offer nx-container" aria-labelledby="nx-offer-title">
+    <div class="nx-offer__panel">
+      {% if offer_image != blank %}
+        {{ offer_image | image_url: width: 2000 | image_tag: loading: 'lazy', class: 'nx-offer__image', alt: '' }}
+      {% else %}
+        <img class="nx-offer__image" src="{{ 'nexora-offer.webp' | asset_url }}" alt="" width="2103" height="748" loading="lazy">
+      {% endif %}
+      <div class="nx-offer__copy"><p class="nx-kicker">{{ section.settings.offer_eyebrow | escape }}</p><h2 id="nx-offer-title">{{ section.settings.offer_heading | escape | newline_to_br }}</h2><p>{{ section.settings.offer_text | escape }}</p><a class="nx-button nx-button--light" href="{{ section.settings.offer_link | default: shop_link }}">{{ section.settings.offer_button | escape }} {% render 'az-icon', name: 'arrow-right' %}</a></div>
+    </div>
+  </section>
+
+  <section class="nx-perks nx-container" aria-label="Why shop with us">
+    <div>{% render 'az-icon', name: 'truck' %}<strong>Free Shipping</strong><span>On orders over $50</span></div>
+    <div>{% render 'az-icon', name: 'shield' %}<strong>Secure Payments</strong><span>Protected checkout</span></div>
+    <div>{% render 'az-icon', name: 'arrow-right' %}<strong>Easy Returns</strong><span>30-day hassle-free returns</span></div>
+    <div>{% render 'az-icon', name: 'heart' %}<strong>Here to Help</strong><span>Support when you need it</span></div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Nexora homepage",
+  "settings": [
+    {"type":"image_picker","id":"hero_image","label":"Hero image"},
+    {"type":"text","id":"hero_eyebrow","label":"Hero eyebrow","default":"PREMIUM · MINIMAL · TIMELESS"},
+    {"type":"textarea","id":"hero_heading","label":"Hero heading","default":"Elevate Your\nEveryday Style"},
+    {"type":"text","id":"hero_text","label":"Hero description","default":"Discover thoughtfully designed essentials that blend modern aesthetics with everyday functionality."},
+    {"type":"text","id":"hero_button","label":"Hero button","default":"Shop Now"},
+    {"type":"url","id":"shop_link","label":"Shop link"},
+    {"type":"collection","id":"featured_collection","label":"Featured collection"},
+    {"type":"text","id":"featured_eyebrow","label":"Featured eyebrow","default":"FEATURED PRODUCTS"},
+    {"type":"text","id":"featured_heading","label":"Featured heading","default":"Best Sellers"},
+    {"type":"image_picker","id":"offer_image","label":"Offer image"},
+    {"type":"text","id":"offer_eyebrow","label":"Offer eyebrow","default":"LIMITED TIME OFFER"},
+    {"type":"textarea","id":"offer_heading","label":"Offer heading","default":"Up to 40% Off\nTop Picks"},
+    {"type":"text","id":"offer_text","label":"Offer description","default":"Upgrade your essentials with exclusive savings — for a limited time only."},
+    {"type":"text","id":"offer_button","label":"Offer button","default":"Shop Sale"},
+    {"type":"url","id":"offer_link","label":"Offer link"}
+  ],
+  "blocks": [{"type":"category","name":"Category","limit":4,"settings":[{"type":"text","id":"title","label":"Title","default":"Category"},{"type":"collection","id":"collection","label":"Collection"},{"type":"image_picker","id":"image","label":"Image"}]}],
+  "presets": [{"name":"Nexora homepage","blocks":[{"type":"category","settings":{"title":"Smart Watches"}},{"type":"category","settings":{"title":"Earbuds"}},{"type":"category","settings":{"title":"Accessories"}},{"type":"category","settings":{"title":"Lifestyle"}}]}]
+}
+{% endschema %}

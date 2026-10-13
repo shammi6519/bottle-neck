@@ -1,8 +1,15 @@
 {
   "sections": {
     "storefront": {
-      "type": "aquazen-storefront",
-      "settings": {}
+      "type": "nexora-home",
+      "settings": {},
+      "blocks": {
+        "watches": {"type":"category","settings":{"title":"Smart Watches"}},
+        "earbuds": {"type":"category","settings":{"title":"Earbuds"}},
+        "accessories": {"type":"category","settings":{"title":"Accessories"}},
+        "lifestyle": {"type":"category","settings":{"title":"Lifestyle"}}
+      },
+      "block_order": ["watches","earbuds","accessories","lifestyle"]
     }
   },
   "order": [

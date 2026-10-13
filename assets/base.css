@@ -1,12 +1,4324 @@
-:root{--green:#294b30;--ink:#151a16;--cream:#faf8f4;--line:#e8e5df}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif;background:#fff;font-size:14px}.site-header{height:58px;padding:0 4.7%;display:flex;align-items:center;gap:40px;background:#fff;position:relative;z-index:5}.brand{color:#172018;text-decoration:none;font-size:25px;font-weight:600;letter-spacing:-1.4px;white-space:nowrap}.brand span:not(.brand-mark){font-weight:400}.brand-mark{font-size:30px;margin-right:6px;vertical-align:-2px}.main-nav{display:flex;gap:32px;margin:auto}.main-nav a{color:inherit;text-decoration:none;font-size:12px}.header-actions{display:flex;align-items:center;gap:20px}.button{display:inline-flex;align-items:center;gap:12px;border:0;border-radius:100px;background:var(--green);padding:14px 29px;color:#fff;text-decoration:none;font-weight:600;font-size:14px;box-shadow:inset 0 -12px 20px #17311c20}.button i{font-style:normal;font-size:19px}.button--small{font-size:12px;padding:10px 20px}.cart{font-size:25px;text-decoration:none;color:var(--ink);position:relative}.cart sup{font:10px 'DM Sans';position:absolute;top:2px;right:-5px}.hero{height:535px;position:relative;isolation:isolate;background:var(--hero-image) center/cover no-repeat;overflow:hidden}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,#fffefde8 27%,#fff9 42%,transparent 62%);z-index:-1}.hero-copy{max-width:460px;padding:38px 0 0 5%;position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:3px;margin:0 0 13px}.hero h1,.serif-label,.styles h2,.details h2{font:46px/1.06 'DM Serif Display',Georgia,serif;letter-spacing:-.7px;margin:0}.hero-text{max-width:360px;line-height:1.48;color:#4f514e;margin:13px 0 20px;font-size:14px}.quick-features{display:flex;gap:17px;margin:5px 0 19px}.quick-features span{width:77px;display:flex;flex-direction:column;gap:7px;align-items:center;font-size:25px}.quick-features b{font-size:10px;text-align:center;white-space:nowrap}.social-proof{display:flex;align-items:center;gap:12px;margin-top:23px;font-size:12px}.avatars{display:flex}.avatars i{display:block;width:33px;height:33px;border-radius:50%;border:2px solid white;margin-right:-7px;background:linear-gradient(135deg,#e4b695,#5d3927)}.avatars i:nth-child(2){background:linear-gradient(135deg,#513a2c,#e6c09d)}.avatars i:nth-child(3){background:linear-gradient(135deg,#d39a73,#4b3527)}.stars{color:#f6b400;letter-spacing:1px}.impact-note{font:italic 31px/1.02 'DM Serif Display',serif;position:absolute;right:7%;top:62px;transform:rotate(-8deg);text-align:center}.impact-note em{font-style:inherit;border-bottom:3px solid var(--green)}.sustainable{position:absolute;right:5%;bottom:67px;width:132px;height:132px;border:3px solid white;border-radius:50%;background:#f8f8f4e8;box-shadow:0 2px 9px #0002;display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:24px;color:var(--green)}.sustainable strong{font-size:13px;color:#151a16}.sustainable small{text-align:center;color:#151a16;font-size:9px}.benefit-wrap{padding:0 4%;position:relative;margin-top:-39px;z-index:2}.benefit-bar{min-height:166px;border-radius:21px;background:linear-gradient(115deg,#fff,#f4f3ef);display:grid;grid-template-columns:repeat(4,1fr);align-items:center;padding:20px 3%;box-shadow:0 4px 18px #1f3c1b0b}.benefit-bar article{text-align:center;padding:0 15px}.benefit-icon{display:block;color:#1e3825;font-size:35px;height:42px}.benefit-bar h3{font:17px/1.05 'DM Serif Display';margin:6px 0}.benefit-bar p{margin:0 auto;color:#555;line-height:1.35;max-width:185px;font-size:12px}.story{display:grid;grid-template-columns:42% 23% 17% 18%;padding-top:21px;min-height:290px}.story-image{min-height:290px;background-position:center;background-size:cover;position:relative;color:#fff}.story-image:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#0009)}.story-image .play{position:absolute;bottom:30px;left:36px;z-index:1;border:0;border-radius:50%;width:42px;height:42px;background:#fff;color:var(--green)}.story-image span{z-index:1;position:absolute;right:25px;bottom:22px;text-align:right;font:29px/1 'DM Serif Display';font-style:italic}.story-copy{padding:21px 22px}.serif-label{font-size:23px;line-height:.95}.story-copy>p:last-of-type{font-size:12px;line-height:1.45;color:#555}.moment-icons{display:flex;justify-content:space-between;margin-top:28px}.moment-icons span{font-size:27px;text-align:center}.moment-icons small{display:block;font-size:10px;margin-top:6px}.detail-photo{margin:0 8px;background:linear-gradient(#0000,#0001),url('aquazen-hero.png') 72% center/cover;border-radius:14px}.details{padding:25px 15px}.details h2{font-size:19px;line-height:1}.details ul{padding:0;margin:17px 0;list-style:none;font-size:10px;line-height:2.8;color:#555}.details li:before{content:'✓';color:#fff;background:var(--green);border-radius:50%;font-size:8px;padding:1px 3px;margin-right:7px}.styles{padding:25px 6% 23px;display:grid;grid-template-columns:60% 40%;gap:16px;align-items:center}.styles-header{text-align:center;grid-column:1}.styles h2{font-size:22px}.styles-header p{font:12px 'DM Serif Display';margin:6px}.style-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;grid-column:1}.bottle-choice{text-align:center;font-size:10px}.bottle-choice>i{height:117px;background:#f6f6f5;border-radius:9px;display:block;position:relative;margin-bottom:7px}.bottle-choice.selected>i{border:1px solid var(--green)}.bottle:after{content:'';position:absolute;width:30px;height:82px;background:#222;border-radius:10px 10px 12px 12px;left:50%;top:22px;transform:translateX(-50%);box-shadow:0 -10px 0 -4px #555}.bottle-2:after{background:#eee;box-shadow:0 -10px 0 -4px #999}.bottle-3:after{background:#49654b;box-shadow:0 -10px 0 -4px #253d28}.bottle-4:after{background:#db8992;box-shadow:0 -10px 0 -4px #b66771}.bottle-5:after{background:#274454;box-shadow:0 -10px 0 -4px #142e3d}.collection-card{height:200px;grid-column:2;grid-row:1 / span 2;border-radius:10px;background:linear-gradient(90deg,#fbfaf6e8,#fff0),url('aquazen-collection.png') center/cover;display:flex;align-items:center;padding:29px}.collection-card h2{font-size:22px;line-height:.96;margin-bottom:16px}.testimonial{background:radial-gradient(circle at 70%,#a5b5a2,#527451);color:#fff;min-height:188px;padding:31px 18%;display:flex;gap:18px;align-items:center;justify-content:center;text-align:center}.testimonial blockquote{font:21px/1.12 'DM Serif Display';margin:0 0 10px}.testimonial p{font-size:11px;margin:0}.customer-face{border-radius:50%;background:#d19a7c;padding:6px;color:#d19a7c}.testimonial .dots{color:#cad7c9;margin-top:14px;font-size:10px;word-spacing:5px}.testimonial button{border:1px solid #fff;background:#ffffff11;border-radius:50%;color:#fff;width:35px;height:35px;font-size:18px}.site-footer{background:#19281c;color:#fff;padding:32px 5%;display:flex;align-items:center;gap:30px}.site-footer .brand{color:#fff}.footer-note{margin-left:auto;font-size:11px;color:#c8d2c8}
-@media(max-width:760px){.site-header{padding:0 5%;gap:12px}.main-nav{display:none}.header-actions{margin-left:auto}.brand{font-size:21px}.hero{height:640px;background-position:68% center}.hero:before{background:linear-gradient(90deg,#fff 0%,#fffefdeb 54%,#fff8 75%,transparent)}.hero-copy{padding:32px 7%;max-width:380px}.hero h1{font-size:38px}.impact-note,.sustainable{display:none}.quick-features{gap:5px}.quick-features span{width:68px}.benefit-wrap{margin-top:-20px;padding:0 3%}.benefit-bar{grid-template-columns:1fr 1fr;padding:12px}.benefit-bar article{padding:8px}.benefit-bar p{display:none}.story{grid-template-columns:1fr 1fr}.story-image{grid-column:1 / span 2}.story-copy{padding:25px}.detail-photo{height:250px;margin:0}.details{padding:25px 10px}.styles{grid-template-columns:1fr;padding:25px 4%}.styles-header,.style-grid{grid-column:1}.collection-card{grid-column:1;grid-row:auto}.testimonial{padding:28px 4%}.testimonial blockquote{font-size:18px}.site-footer{display:block}.footer-note{margin-top:20px}.site-footer p{font-size:12px}}
+:root {
+  --green: #294b30;
+  --ink: #151a16;
+  --cream: #faf8f4;
+  --line: #e8e5df
+}
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: #fff;
+  font-size: 14px
+}
+
+.site-header {
+  height: 58px;
+  padding: 0 4.7%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  position: relative;
+  z-index: 5
+}
+
+.brand {
+  color: #172018;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -1.4px;
+  white-space: nowrap
+}
+
+.brand span:not(.brand-mark) {
+  font-weight: 400
+}
+
+.brand-mark {
+  font-size: 30px;
+  margin-right: 6px;
+  vertical-align: -2px
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+  margin: auto
+}
+
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 100px;
+  background: var(--green);
+  padding: 14px 29px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: inset 0 -12px 20px #17311c20
+}
+
+.button i {
+  font-style: normal;
+  font-size: 19px
+}
+
+.button--small {
+  font-size: 12px;
+  padding: 10px 20px
+}
+
+.cart {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--ink);
+  position: relative
+}
+
+.cart sup {
+  font: 10px 'DM Sans';
+  position: absolute;
+  top: 2px;
+  right: -5px
+}
+
+.hero {
+  height: 535px;
+  position: relative;
+  isolation: isolate;
+  background: var(--hero-image) center/cover no-repeat;
+  overflow: hidden
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff 0%, #fffefde8 27%, #fff9 42%, transparent 62%);
+  z-index: -1
+}
+
+.hero-copy {
+  max-width: 460px;
+  padding: 38px 0 0 5%;
+  position: relative;
+  z-index: 1
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 0 0 13px
+}
+
+.hero h1,
+.serif-label,
+.styles h2,
+.details h2 {
+  font: 46px/1.06 'DM Serif Display', Georgia, serif;
+  letter-spacing: -.7px;
+  margin: 0
+}
+
+.hero-text {
+  max-width: 360px;
+  line-height: 1.48;
+  color: #4f514e;
+  margin: 13px 0 20px;
+  font-size: 14px
+}
+
+.quick-features {
+  display: flex;
+  gap: 17px;
+  margin: 5px 0 19px
+}
+
+.quick-features span {
+  width: 77px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  font-size: 25px
+}
+
+.quick-features b {
+  font-size: 10px;
+  text-align: center;
+  white-space: nowrap
+}
+
+.social-proof {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 23px;
+  font-size: 12px
+}
+
+.avatars {
+  display: flex
+}
+
+.avatars i {
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -7px;
+  background: linear-gradient(135deg, #e4b695, #5d3927)
+}
+
+.avatars i:nth-child(2) {
+  background: linear-gradient(135deg, #513a2c, #e6c09d)
+}
+
+.avatars i:nth-child(3) {
+  background: linear-gradient(135deg, #d39a73, #4b3527)
+}
+
+.stars {
+  color: #f6b400;
+  letter-spacing: 1px
+}
+
+.impact-note {
+  font: italic 31px/1.02 'DM Serif Display', serif;
+  position: absolute;
+  right: 7%;
+  top: 62px;
+  transform: rotate(-8deg);
+  text-align: center
+}
+
+.impact-note em {
+  font-style: inherit;
+  border-bottom: 3px solid var(--green)
+}
+
+.sustainable {
+  position: absolute;
+  right: 5%;
+  bottom: 67px;
+  width: 132px;
+  height: 132px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: #f8f8f4e8;
+  box-shadow: 0 2px 9px #0002;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--green)
+}
+
+.sustainable strong {
+  font-size: 13px;
+  color: #151a16
+}
+
+.sustainable small {
+  text-align: center;
+  color: #151a16;
+  font-size: 9px
+}
+
+.benefit-wrap {
+  padding: 0 4%;
+  position: relative;
+  margin-top: -39px;
+  z-index: 2
+}
+
+.benefit-bar {
+  min-height: 166px;
+  border-radius: 21px;
+  background: linear-gradient(115deg, #fff, #f4f3ef);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 20px 3%;
+  box-shadow: 0 4px 18px #1f3c1b0b
+}
+
+.benefit-bar article {
+  text-align: center;
+  padding: 0 15px
+}
+
+.benefit-icon {
+  display: block;
+  color: #1e3825;
+  font-size: 35px;
+  height: 42px
+}
+
+.benefit-bar h3 {
+  font: 17px/1.05 'DM Serif Display';
+  margin: 6px 0
+}
+
+.benefit-bar p {
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.35;
+  max-width: 185px;
+  font-size: 12px
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 42% 23% 17% 18%;
+  padding-top: 21px;
+  min-height: 290px
+}
+
+.story-image {
+  min-height: 290px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff
+}
+
+.story-image:after {
+  content: '';
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, #0009)
+}
+
+.story-image .play {
+  position: absolute;
+  bottom: 30px;
+  left: 36px;
+  z-index: 1;
+  border: 0;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  color: var(--green)
+}
+
+.story-image span {
+  z-index: 1;
+  position: absolute;
+  right: 25px;
+  bottom: 22px;
+  text-align: right;
+  font: 29px/1 'DM Serif Display';
+  font-style: italic
+}
+
+.story-copy {
+  padding: 21px 22px
+}
+
+.serif-label {
+  font-size: 23px;
+  line-height: .95
+}
+
+.story-copy>p:last-of-type {
+  font-size: 12px;
+  line-height: 1.45;
+  color: #555
+}
+
+.moment-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px
+}
+
+.moment-icons span {
+  font-size: 27px;
+  text-align: center
+}
+
+.moment-icons small {
+  display: block;
+  font-size: 10px;
+  margin-top: 6px
+}
+
+.detail-photo {
+  margin: 0 8px;
+  background: linear-gradient(#0000, #0001), url('aquazen-hero.png') 72% center/cover;
+  border-radius: 14px
+}
+
+.details {
+  padding: 25px 15px
+}
+
+.details h2 {
+  font-size: 19px;
+  line-height: 1
+}
+
+.details ul {
+  padding: 0;
+  margin: 17px 0;
+  list-style: none;
+  font-size: 10px;
+  line-height: 2.8;
+  color: #555
+}
+
+.details li:before {
+  content: '✓';
+  color: #fff;
+  background: var(--green);
+  border-radius: 50%;
+  font-size: 8px;
+  padding: 1px 3px;
+  margin-right: 7px
+}
+
+.styles {
+  padding: 25px 6% 23px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 16px;
+  align-items: center
+}
+
+.styles-header {
+  text-align: center;
+  grid-column: 1
+}
+
+.styles h2 {
+  font-size: 22px
+}
+
+.styles-header p {
+  font: 12px 'DM Serif Display';
+  margin: 6px
+}
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+  grid-column: 1
+}
+
+.bottle-choice {
+  text-align: center;
+  font-size: 10px
+}
+
+.bottle-choice>i {
+  height: 117px;
+  background: #f6f6f5;
+  border-radius: 9px;
+  display: block;
+  position: relative;
+  margin-bottom: 7px
+}
+
+.bottle-choice.selected>i {
+  border: 1px solid var(--green)
+}
+
+.bottle:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 82px;
+  background: #222;
+  border-radius: 10px 10px 12px 12px;
+  left: 50%;
+  top: 22px;
+  transform: translateX(-50%);
+  box-shadow: 0 -10px 0 -4px #555
+}
+
+.bottle-2:after {
+  background: #eee;
+  box-shadow: 0 -10px 0 -4px #999
+}
+
+.bottle-3:after {
+  background: #49654b;
+  box-shadow: 0 -10px 0 -4px #253d28
+}
+
+.bottle-4:after {
+  background: #db8992;
+  box-shadow: 0 -10px 0 -4px #b66771
+}
+
+.bottle-5:after {
+  background: #274454;
+  box-shadow: 0 -10px 0 -4px #142e3d
+}
+
+.collection-card {
+  height: 200px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #fbfaf6e8, #fff0), url('aquazen-collection.png') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 29px
+}
+
+.collection-card h2 {
+  font-size: 22px;
+  line-height: .96;
+  margin-bottom: 16px
+}
+
+.testimonial {
+  background: radial-gradient(circle at 70%, #a5b5a2, #527451);
+  color: #fff;
+  min-height: 188px;
+  padding: 31px 18%;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+
+.testimonial blockquote {
+  font: 21px/1.12 'DM Serif Display';
+  margin: 0 0 10px
+}
+
+.testimonial p {
+  font-size: 11px;
+  margin: 0
+}
+
+.customer-face {
+  border-radius: 50%;
+  background: #d19a7c;
+  padding: 6px;
+  color: #d19a7c
+}
+
+.testimonial .dots {
+  color: #cad7c9;
+  margin-top: 14px;
+  font-size: 10px;
+  word-spacing: 5px
+}
+
+.testimonial button {
+  border: 1px solid #fff;
+  background: #ffffff11;
+  border-radius: 50%;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 18px
+}
+
+.site-footer {
+  background: #19281c;
+  color: #fff;
+  padding: 32px 5%;
+  display: flex;
+  align-items: center;
+  gap: 30px
+}
+
+.site-footer .brand {
+  color: #fff
+}
+
+.footer-note {
+  margin-left: auto;
+  font-size: 11px;
+  color: #c8d2c8
+}
+
+@media(max-width:760px) {
+  .site-header {
+    padding: 0 5%;
+    gap: 12px
+  }
+
+  .main-nav {
+    display: none
+  }
+
+  .header-actions {
+    margin-left: auto
+  }
+
+  .brand {
+    font-size: 21px
+  }
+
+  .hero {
+    height: 640px;
+    background-position: 68% center
+  }
+
+  .hero:before {
+    background: linear-gradient(90deg, #fff 0%, #fffefdeb 54%, #fff8 75%, transparent)
+  }
+
+  .hero-copy {
+    padding: 32px 7%;
+    max-width: 380px
+  }
+
+  .hero h1 {
+    font-size: 38px
+  }
+
+  .impact-note,
+  .sustainable {
+    display: none
+  }
+
+  .quick-features {
+    gap: 5px
+  }
+
+  .quick-features span {
+    width: 68px
+  }
+
+  .benefit-wrap {
+    margin-top: -20px;
+    padding: 0 3%
+  }
+
+  .benefit-bar {
+    grid-template-columns: 1fr 1fr;
+    padding: 12px
+  }
+
+  .benefit-bar article {
+    padding: 8px
+  }
+
+  .benefit-bar p {
+    display: none
+  }
+
+  .story {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .story-image {
+    grid-column: 1 / span 2
+  }
+
+  .story-copy {
+    padding: 25px
+  }
+
+  .detail-photo {
+    height: 250px;
+    margin: 0
+  }
+
+  .details {
+    padding: 25px 10px
+  }
+
+  .styles {
+    grid-template-columns: 1fr;
+    padding: 25px 4%
+  }
+
+  .styles-header,
+  .style-grid {
+    grid-column: 1
+  }
+
+  .collection-card {
+    grid-column: 1;
+    grid-row: auto
+  }
+
+  .testimonial {
+    padding: 28px 4%
+  }
+
+  .testimonial blockquote {
+    font-size: 18px
+  }
+
+  .site-footer {
+    display: block
+  }
+
+  .footer-note {
+    margin-top: 20px
+  }
+
+  .site-footer p {
+    font-size: 12px
+  }
+}
 
 /* Reference-layout refinements */
-@media (min-width: 761px) and (max-width: 1100px){.site-header{height:57px;padding:0 4.8%}.main-nav{margin-left:35px;margin-right:auto;gap:31px}.hero{height:536px}.hero-copy{padding-top:39px}.benefit-wrap{margin-top:-39px}.benefit-bar{height:180px}.story{min-height:289px}.styles{min-height:286px;padding-top:24px;padding-bottom:23px}.testimonial{min-height:206px}.site-footer{display:none}}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .site-header {
+    height: 57px;
+    padding: 0 4.8%
+  }
 
-@media (min-width: 761px){.main-nav{position:absolute;left:25%;margin:0}.header-actions{margin-left:auto}}
+  .main-nav {
+    margin-left: 35px;
+    margin-right: auto;
+    gap: 31px
+  }
+
+  .hero {
+    height: 536px
+  }
+
+  .hero-copy {
+    padding-top: 39px
+  }
+
+  .benefit-wrap {
+    margin-top: -39px
+  }
+
+  .benefit-bar {
+    height: 180px
+  }
+
+  .story {
+    min-height: 289px
+  }
+
+  .styles {
+    min-height: 286px;
+    padding-top: 24px;
+    padding-bottom: 23px
+  }
+
+  .testimonial {
+    min-height: 206px
+  }
+
+  .site-footer {
+    display: none
+  }
+}
+
+@media (min-width: 761px) {
+  .main-nav {
+    position: absolute;
+    left: 25%;
+    margin: 0
+  }
+
+  .header-actions {
+    margin-left: auto
+  }
+}
 
 /* AquaZen product storefront */
-.az-storefront{--az:#24492d;--az-ink:#101411;--az-cream:#fcfbf8;max-width:1200px;margin:auto;padding:0 34px 28px;background:var(--az-cream);font-size:13px}.az-storefront h1,.az-storefront h2,.az-storefront h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400}.az-top{height:565px;display:grid;grid-template-columns:63% 37%;gap:17px}.az-gallery{position:relative;overflow:hidden;border-radius:0 0 8px 8px;background:linear-gradient(90deg,#fff 0%,#fff5 36%,#fff0 62%),url('aquazen-hero.png') 62% center/cover}.az-intro{position:absolute;left:12px;top:20px;z-index:1}.az-intro>p{letter-spacing:3px;font-size:11px;margin:0 0 12px}.az-intro h1{font-size:52px;line-height:.94;letter-spacing:-1.4px;margin:0 0 15px}.az-intro>span{display:block;line-height:1.37;color:#414641}.az-intro ul{padding:0;list-style:none;line-height:1.9;margin:12px 0}.az-intro li:before,.az-detail-copy li:before{content:'✓';display:inline-block;border-radius:50%;background:var(--az);color:#fff;font-size:8px;width:15px;height:15px;text-align:center;line-height:15px;margin-right:10px}.az-intro em{display:block;margin-top:17px;font:italic 28px/.86 'DM Serif Display';transform:rotate(-10deg)}.az-script{position:absolute;right:25px;top:94px;font:italic 28px/1 'DM Serif Display';transform:rotate(-8deg)}.az-words{position:absolute;right:29px;top:221px;letter-spacing:1.7px;font-size:11px;line-height:1.65}.az-thumbs{position:absolute;bottom:16px;right:15px;display:flex;gap:5px;padding:5px;background:#fffc;border-radius:7px}.az-thumbs i{display:block;width:35px;height:58px;border-radius:3px;background:#335d3a}.az-thumbs i:nth-child(2){background:#202220}.az-thumbs i:nth-child(3){background:#f2f2f0}.az-thumbs i:nth-child(4){background:#d47c8a}.az-thumbs i:nth-child(5){background:url('aquazen-detail.png') center/cover}.az-thumbs .active{outline:1px solid var(--az);outline-offset:3px}.az-thumbs b{align-self:center;border-radius:50%;background:white;color:var(--az);padding:8px}.az-buy-card{margin-top:8px;border-radius:16px;background:#fff;padding:17px 21px;box-shadow:0 8px 25px #29352010}.az-offer{display:flex;justify-content:space-between;align-items:center;font-size:11px}.az-offer b,.az-price small{background:#415f46;color:#fff;border-radius:30px;padding:6px 11px;font-size:10px}.az-buy-card h2{font-size:27px;line-height:1;margin:15px 0 3px}.az-sub{font-size:13px;margin:0;color:#505550}.az-rating{margin:10px 0}.az-rating strong,.az-review-grid strong{color:#ffb400;letter-spacing:2px}.az-loved{font-size:11px;display:flex;align-items:center;gap:0}.az-loved i{width:23px;height:23px;border:1px solid white;border-radius:50%;margin-right:-6px;background:linear-gradient(140deg,#a76549,#eee)}.az-loved i:nth-child(2){background:#624233}.az-loved i:nth-child(3){background:#e6c0a0;margin-right:9px}.az-price{font-weight:700;font-size:28px;margin:11px 0}.az-price del{font-size:15px;color:#666;margin-left:5px}.az-colors{display:flex;gap:9px;margin:10px 0}.az-colors i{width:31px;height:31px;border-radius:50%;background:#456a49;border:1px solid var(--az);box-shadow:0 0 0 2px white,0 0 0 3px var(--az)}.az-colors i:nth-child(2){background:#191a19;box-shadow:none;border:0}.az-colors i:nth-child(3){background:#eee;box-shadow:none;border:1px solid #ddd}.az-colors i:nth-child(4){background:#d77d89;box-shadow:none;border:0}.az-colors i:nth-child(5){background:#263d50;box-shadow:none;border:0}.az-quantity{border:1px solid #ddd;border-radius:8px;width:100px;display:flex;justify-content:space-around;padding:7px;margin-bottom:11px}.az-quantity button{border:0;background:none}.az-cart,.az-buy{display:block;width:100%;border:0;border-radius:10px;padding:14px;background:var(--az);color:#fff;font-size:15px;font-weight:700}.az-buy{background:#e1e5de;color:#172618;margin-top:8px}.az-card-features{border-top:1px solid #eee;margin-top:11px;padding-top:10px;display:flex;justify-content:space-around;text-align:center}.az-card-features span{font-size:25px}.az-card-features b{font:10px/1.05 'DM Sans';display:block;margin-top:3px}.az-benefits{height:178px;margin:14px 0;display:grid;grid-template-columns:repeat(4,1fr) 1.2fr;background:#f5f4f0;border-radius:13px;overflow:hidden}.az-benefits article{margin:13px 0;text-align:center;border-right:1px solid #e3e1dc;padding:7px}.az-benefits i{border:1px solid var(--az);border-radius:50%;display:inline-grid;place-items:center;color:var(--az);font-style:normal;font-size:24px;width:42px;height:42px}.az-benefits h3{font-size:16px;margin:8px 0}.az-benefits p{font-size:11px;line-height:1.35;margin:0;color:#4c4f4c}.az-benefits aside{background:linear-gradient(#18352388,#18352344),url('aquazen-hero.png') center/cover;color:white;padding:25px 15px;font:italic 30px/.9 'DM Serif Display';text-align:center;transform:none}.az-benefits aside small{font:9px 'DM Sans';font-style:normal;display:block;margin-top:15px}.az-details{display:grid;grid-template-columns:38% 31% 17% 14%;height:304px;gap:12px}.az-lifestyle{border-radius:9px;background:linear-gradient(90deg,#183d4388,#0000),url('aquazen-lifestyle.png') center/cover;color:#fff;position:relative;padding:27px 18px;font-size:17px;letter-spacing:1.4px}.az-lifestyle span{position:absolute;bottom:14px;left:19px;font-size:11px;letter-spacing:0}.az-accord{padding:8px}.az-accord h2{font-size:24px;margin:0 0 11px}.az-accord button{width:100%;display:flex;justify-content:space-between;background:#fff;border:1px solid #e2e0db;border-radius:6px;padding:10px 12px;margin-bottom:5px;font-size:11px}.az-accord p{margin-top:20px;font-size:11px}.az-accord small{margin-left:25px;color:#666}.az-detail-photo{border-radius:13px;background:url('aquazen-detail.png') center/cover}.az-detail-copy{padding:23px 8px}.az-detail-copy h2{font-size:22px;line-height:.98;margin:0}.az-detail-copy hr{width:34px;margin:14px 0;border:0;border-top:2px solid var(--az)}.az-detail-copy ul{list-style:none;padding:0;font-size:10px;line-height:2.5}.az-social{display:grid;grid-template-columns:37% 63%;gap:25px;margin-top:18px}.az-social h2{font-size:21px;margin:0 0 9px}.az-compare table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #e4e1dc;border-radius:7px;overflow:hidden;font-size:10px}.az-compare th{background:#f1f0eb;padding:7px}.az-compare th:nth-child(2),.az-compare td:nth-child(2){background:#dce3d9;color:var(--az);font-weight:bold}.az-compare td{padding:6px 10px;border-top:1px solid #eae8e3;text-align:center}.az-compare td:first-child{text-align:left}.az-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.az-review-grid article{border:1px solid #e8e5df;border-radius:8px;padding:14px;font-size:11px}.az-review-grid p{line-height:1.35;height:46px;margin:7px 0}.az-review-grid small{display:block;color:#666}.az-cta{height:150px;margin-top:20px;padding:25px 38px;color:white;background:linear-gradient(90deg,#193d2899,#193d2822),url('aquazen-hero.png') center 53%/cover;display:flex;align-items:center;gap:55px;position:relative}.az-cta h2{font-size:29px;line-height:.96;margin:0}.az-cta p{font-size:12px}.az-cta a{border:1px solid white;border-radius:25px;padding:13px 34px;color:white;text-decoration:none;font-weight:bold}.az-cta span{position:absolute;bottom:15px;left:35%;font-size:9px}@media(max-width:760px){.az-storefront{padding:0 12px}.az-top{height:auto;grid-template-columns:1fr}.az-gallery{height:580px}.az-buy-card{margin-top:0}.az-benefits{height:auto;grid-template-columns:1fr 1fr}.az-benefits aside{display:none}.az-details{height:auto;grid-template-columns:1fr 1fr}.az-lifestyle{height:300px;grid-column:span 2}.az-detail-photo{height:300px}.az-social{grid-template-columns:1fr}.az-review-grid{grid-template-columns:1fr}.az-cta{height:auto;display:block}.az-cta a{display:inline-block;margin:10px 0}.az-cta span{position:static;display:block}.az-intro h1{font-size:43px}}
+.az-storefront {
+  --az: #24492d;
+  --az-ink: #101411;
+  --az-cream: #fcfbf8;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 34px 28px;
+  background: var(--az-cream);
+  font-size: 13px
+}
 
-body:has(.az-storefront){background:#fcfbf8}.az-storefront~*{display:none}.site-footer{display:none}
+.az-storefront h1,
+.az-storefront h2,
+.az-storefront h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400
+}
+
+.az-top {
+  height: 565px;
+  display: grid;
+  grid-template-columns: 63% 37%;
+  gap: 17px
+}
+
+.az-gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  background: linear-gradient(90deg, #fff 0%, #fff5 36%, #fff0 62%), url('aquazen-hero.png') 62% center/cover
+}
+
+.az-intro {
+  position: absolute;
+  left: 12px;
+  top: 20px;
+  z-index: 1
+}
+
+.az-intro>p {
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin: 0 0 12px
+}
+
+.az-intro h1 {
+  font-size: 52px;
+  line-height: .94;
+  letter-spacing: -1.4px;
+  margin: 0 0 15px
+}
+
+.az-intro>span {
+  display: block;
+  line-height: 1.37;
+  color: #414641
+}
+
+.az-intro ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.9;
+  margin: 12px 0
+}
+
+.az-intro li:before,
+.az-detail-copy li:before {
+  content: '✓';
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--az);
+  color: #fff;
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  margin-right: 10px
+}
+
+.az-intro em {
+  display: block;
+  margin-top: 17px;
+  font: italic 28px/.86 'DM Serif Display';
+  transform: rotate(-10deg)
+}
+
+.az-script {
+  position: absolute;
+  right: 25px;
+  top: 94px;
+  font: italic 28px/1 'DM Serif Display';
+  transform: rotate(-8deg)
+}
+
+.az-words {
+  position: absolute;
+  right: 29px;
+  top: 221px;
+  letter-spacing: 1.7px;
+  font-size: 11px;
+  line-height: 1.65
+}
+
+.az-thumbs {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  background: #fffc;
+  border-radius: 7px
+}
+
+.az-thumbs i {
+  display: block;
+  width: 35px;
+  height: 58px;
+  border-radius: 3px;
+  background: #335d3a
+}
+
+.az-thumbs i:nth-child(2) {
+  background: #202220
+}
+
+.az-thumbs i:nth-child(3) {
+  background: #f2f2f0
+}
+
+.az-thumbs i:nth-child(4) {
+  background: #d47c8a
+}
+
+.az-thumbs i:nth-child(5) {
+  background: url('aquazen-detail.png') center/cover
+}
+
+.az-thumbs .active {
+  outline: 1px solid var(--az);
+  outline-offset: 3px
+}
+
+.az-thumbs b {
+  align-self: center;
+  border-radius: 50%;
+  background: white;
+  color: var(--az);
+  padding: 8px
+}
+
+.az-buy-card {
+  margin-top: 8px;
+  border-radius: 16px;
+  background: #fff;
+  padding: 17px 21px;
+  box-shadow: 0 8px 25px #29352010
+}
+
+.az-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px
+}
+
+.az-offer b,
+.az-price small {
+  background: #415f46;
+  color: #fff;
+  border-radius: 30px;
+  padding: 6px 11px;
+  font-size: 10px
+}
+
+.az-buy-card h2 {
+  font-size: 27px;
+  line-height: 1;
+  margin: 15px 0 3px
+}
+
+.az-sub {
+  font-size: 13px;
+  margin: 0;
+  color: #505550
+}
+
+.az-rating {
+  margin: 10px 0
+}
+
+.az-rating strong,
+.az-review-grid strong {
+  color: #ffb400;
+  letter-spacing: 2px
+}
+
+.az-loved {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 0
+}
+
+.az-loved i {
+  width: 23px;
+  height: 23px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: -6px;
+  background: linear-gradient(140deg, #a76549, #eee)
+}
+
+.az-loved i:nth-child(2) {
+  background: #624233
+}
+
+.az-loved i:nth-child(3) {
+  background: #e6c0a0;
+  margin-right: 9px
+}
+
+.az-price {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 11px 0
+}
+
+.az-price del {
+  font-size: 15px;
+  color: #666;
+  margin-left: 5px
+}
+
+.az-colors {
+  display: flex;
+  gap: 9px;
+  margin: 10px 0
+}
+
+.az-colors i {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: #456a49;
+  border: 1px solid var(--az);
+  box-shadow: 0 0 0 2px white, 0 0 0 3px var(--az)
+}
+
+.az-colors i:nth-child(2) {
+  background: #191a19;
+  box-shadow: none;
+  border: 0
+}
+
+.az-colors i:nth-child(3) {
+  background: #eee;
+  box-shadow: none;
+  border: 1px solid #ddd
+}
+
+.az-colors i:nth-child(4) {
+  background: #d77d89;
+  box-shadow: none;
+  border: 0
+}
+
+.az-colors i:nth-child(5) {
+  background: #263d50;
+  box-shadow: none;
+  border: 0
+}
+
+.az-quantity {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 7px;
+  margin-bottom: 11px
+}
+
+.az-quantity button {
+  border: 0;
+  background: none
+}
+
+.az-cart,
+.az-buy {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px;
+  background: var(--az);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.az-buy {
+  background: #e1e5de;
+  color: #172618;
+  margin-top: 8px
+}
+
+.az-card-features {
+  border-top: 1px solid #eee;
+  margin-top: 11px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center
+}
+
+.az-card-features span {
+  font-size: 25px
+}
+
+.az-card-features b {
+  font: 10px/1.05 'DM Sans';
+  display: block;
+  margin-top: 3px
+}
+
+.az-benefits {
+  height: 178px;
+  margin: 14px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.2fr;
+  background: #f5f4f0;
+  border-radius: 13px;
+  overflow: hidden
+}
+
+.az-benefits article {
+  margin: 13px 0;
+  text-align: center;
+  border-right: 1px solid #e3e1dc;
+  padding: 7px
+}
+
+.az-benefits i {
+  border: 1px solid var(--az);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  color: var(--az);
+  font-style: normal;
+  font-size: 24px;
+  width: 42px;
+  height: 42px
+}
+
+.az-benefits h3 {
+  font-size: 16px;
+  margin: 8px 0
+}
+
+.az-benefits p {
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 0;
+  color: #4c4f4c
+}
+
+.az-benefits aside {
+  background: linear-gradient(#18352388, #18352344), url('aquazen-hero.png') center/cover;
+  color: white;
+  padding: 25px 15px;
+  font: italic 30px/.9 'DM Serif Display';
+  text-align: center;
+  transform: none
+}
+
+.az-benefits aside small {
+  font: 9px 'DM Sans';
+  font-style: normal;
+  display: block;
+  margin-top: 15px
+}
+
+.az-details {
+  display: grid;
+  grid-template-columns: 38% 31% 17% 14%;
+  height: 304px;
+  gap: 12px
+}
+
+.az-lifestyle {
+  border-radius: 9px;
+  background: linear-gradient(90deg, #183d4388, #0000), url('aquazen-lifestyle.png') center/cover;
+  color: #fff;
+  position: relative;
+  padding: 27px 18px;
+  font-size: 17px;
+  letter-spacing: 1.4px
+}
+
+.az-lifestyle span {
+  position: absolute;
+  bottom: 14px;
+  left: 19px;
+  font-size: 11px;
+  letter-spacing: 0
+}
+
+.az-accord {
+  padding: 8px
+}
+
+.az-accord h2 {
+  font-size: 24px;
+  margin: 0 0 11px
+}
+
+.az-accord button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e2e0db;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  align-items: center;
+}
+
+.az-accord p {
+  margin-top: 20px;
+  font-size: 11px
+}
+
+.az-accord small {
+  margin-left: 25px;
+  color: #666
+}
+
+.az-detail-photo {
+  border-radius: 13px;
+  background: url('aquazen-detail.png') center/cover
+}
+
+.az-detail-copy {
+  padding: 23px 8px
+}
+
+.az-detail-copy h2 {
+  font-size: 22px;
+  line-height: .98;
+  margin: 0
+}
+
+.az-detail-copy hr {
+  width: 34px;
+  margin: 14px 0;
+  border: 0;
+  border-top: 2px solid var(--az)
+}
+
+.az-detail-copy ul {
+  list-style: none;
+  padding: 0;
+  font-size: 10px;
+  line-height: 2.5
+}
+
+.az-social {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  gap: 25px;
+  margin-top: 18px
+}
+
+.az-social h2 {
+  font-size: 21px;
+  margin: 0 0 9px
+}
+
+.az-compare table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e4e1dc;
+  border-radius: 7px;
+  overflow: hidden;
+  font-size: 10px
+}
+
+.az-compare th {
+  background: #f1f0eb;
+  padding: 7px
+}
+
+.az-compare th:nth-child(2),
+.az-compare td:nth-child(2) {
+  background: #dce3d9;
+  color: var(--az);
+  font-weight: bold
+}
+
+.az-compare td {
+  padding: 6px 10px;
+  border-top: 1px solid #eae8e3;
+  text-align: center
+}
+
+.az-compare td:first-child {
+  text-align: left
+}
+
+.az-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px
+}
+
+.az-review-grid article {
+  border: 1px solid #e8e5df;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 11px
+}
+
+.az-review-grid p {
+  line-height: 1.35;
+  height: 46px;
+  margin: 7px 0
+}
+
+.az-review-grid small {
+  display: block;
+  color: #666
+}
+
+.az-cta {
+  height: 150px;
+  margin-top: 20px;
+  padding: 25px 38px;
+  color: white;
+  background: linear-gradient(90deg, #193d2899, #193d2822), url('aquazen-hero.png') center 53%/cover;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  position: relative
+}
+
+.az-cta h2 {
+  font-size: 29px;
+  line-height: .96;
+  margin: 0
+}
+
+.az-cta p {
+  font-size: 12px
+}
+
+.az-cta a {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 13px 34px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold
+}
+
+.az-cta span {
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  font-size: 9px
+}
+
+@media(max-width:760px) {
+  .az-storefront {
+    padding: 0 12px
+  }
+
+  .az-top {
+    height: auto;
+    grid-template-columns: 1fr
+  }
+
+  .az-gallery {
+    height: 580px
+  }
+
+  .az-buy-card {
+    margin-top: 0
+  }
+
+  .az-benefits {
+    height: auto;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .az-benefits aside {
+    display: none
+  }
+
+  .az-details {
+    height: auto;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .az-lifestyle {
+    height: 300px;
+    grid-column: span 2
+  }
+
+  .az-detail-photo {
+    height: 300px
+  }
+
+  .az-social {
+    grid-template-columns: 1fr
+  }
+
+  .az-review-grid {
+    grid-template-columns: 1fr
+  }
+
+  .az-cta {
+    height: auto;
+    display: block
+  }
+
+  .az-cta a {
+    display: inline-block;
+    margin: 10px 0
+  }
+
+  .az-cta span {
+    position: static;
+    display: block
+  }
+
+  .az-intro h1 {
+    font-size: 43px
+  }
+}
+
+body:has(.az-storefront) {
+  background: #fcfbf8
+}
+
+.az-storefront~* {
+  display: none
+}
+
+.site-footer {
+  display: none
+}
+
+/* Precision pass: vector icon system and reference typography */
+.az-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -.14em;
+  overflow: visible
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -1.25px;
+  font-size: 25px
+}
+
+.brand .brand-mark {
+  width: 29px;
+  height: 32px;
+  margin: 0 7px 0 0;
+  vertical-align: 0;
+  stroke-width: 1.75
+}
+
+.site-header {
+  height: 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 44px;
+  gap: 0
+}
+
+.main-nav {
+  left: 25.2%;
+  gap: 29px
+}
+
+.main-nav a {
+  font-size: 11px;
+  font-weight: 500
+}
+
+.header-actions {
+  gap: 21px
+}
+
+.header-icon {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111;
+  cursor: pointer
+}
+
+.header-icon .az-icon,
+.cart .az-icon {
+  width: 21px;
+  height: 21px
+}
+
+.cart {
+  display: grid;
+  place-items: center;
+  font-size: 0
+}
+
+.button--small {
+  padding: 10px 25px;
+  font-size: 11px;
+  min-width: 105px;
+  justify-content: center
+}
+
+.az-storefront {
+  padding-left: 35px;
+  padding-right: 35px
+}
+
+.az-intro h1 {
+  font-size: 54px;
+  line-height: .93;
+  letter-spacing: -1.8px
+}
+
+.az-intro>p {
+  font-size: 11px;
+  letter-spacing: 3.2px
+}
+
+.az-intro>span {
+  font-size: 13px
+}
+
+.az-script,
+.az-intro em,
+.az-benefits aside {
+  font-family: 'Caveat', cursive
+}
+
+.az-script {
+  font-size: 31px;
+  line-height: .82;
+  font-weight: 600
+}
+
+.az-intro em {
+  font-size: 31px;
+  line-height: .78;
+  font-weight: 600
+}
+
+.az-intro li,
+.az-detail-copy li {
+  display: flex;
+  align-items: center
+}
+
+.az-intro li:before,
+.az-detail-copy li:before {
+  content: none
+}
+
+.az-intro li>.az-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  color: var(--az)
+}
+
+.az-thumbs b {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  padding: 0;
+  background: transparent
+}
+
+.az-thumbs b>.az-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--az)
+}
+
+.az-offer b {
+  display: inline-flex;
+  align-items: center
+}
+
+.az-offer b:before {
+  content: '';
+  width: 6px;
+  height: 9px;
+  margin-right: 6px;
+  border: 1.3px solid currentColor;
+  border-radius: 50% 50% 45% 45%;
+  transform: rotate(15deg)
+}
+
+.az-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+
+.az-rating strong,
+.az-review-grid strong {
+  display: inline-flex;
+  gap: 1px;
+  color: #ffb100
+}
+
+.az-rating strong .az-icon {
+  width: 15px;
+  height: 15px
+}
+
+.az-review-grid strong .az-icon {
+  width: 13px;
+  height: 13px
+}
+
+.az-quantity button {
+  display: grid;
+  place-items: center
+}
+
+.az-quantity button .az-icon {
+  width: 14px;
+  height: 14px
+}
+
+.az-cart,
+.az-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px
+}
+
+.az-cart>.az-icon {
+  width: 21px;
+  height: 21px
+}
+
+.az-buy>.az-icon {
+  width: 18px;
+  height: 18px
+}
+
+.az-card-features span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: inherit
+}
+
+.az-card-features span>.az-icon {
+  box-sizing: content-box;
+  width: 29px;
+  height: 29px;
+  padding: 7px;
+  border: 1.4px solid var(--az);
+  border-radius: 50%;
+  color: #132e1a
+}
+
+.az-card-features b {
+  margin-top: 6px;
+  line-height: 1.15
+}
+
+.az-benefits article>i {
+  width: 46px;
+  height: 46px
+}
+
+.az-benefits article>i>.az-icon {
+  width: 29px;
+  height: 29px
+}
+
+.az-benefits h3 {
+  font-size: 17px
+}
+
+.az-benefits aside {
+  font-size: 31px;
+  line-height: .78;
+  font-weight: 600
+}
+
+.az-benefits aside em {
+  font-style: normal
+}
+
+.az-benefits aside small {
+  line-height: 1.4;
+  letter-spacing: .6px
+}
+
+.az-use-icons {
+  position: absolute !important;
+  left: 17px !important;
+  right: 17px;
+  bottom: 10px !important;
+  display: flex;
+  justify-content: space-between
+}
+
+.az-use-icons i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal
+}
+
+.az-use-icons .az-icon {
+  width: 23px;
+  height: 23px
+}
+
+.az-use-icons small {
+  font-size: 9px;
+  margin-top: 3px
+}
+
+.az-accord button b {
+  display: grid;
+  place-items: center
+}
+
+.az-accord button .az-icon {
+  width: 13px;
+  height: 13px
+}
+
+.az-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.az-guarantee>.az-icon {
+  box-sizing: content-box;
+  width: 21px;
+  height: 21px;
+  padding: 6px;
+  border: 1px solid var(--az);
+  border-radius: 50%;
+  color: var(--az)
+}
+
+.az-guarantee small {
+  margin-left: 0
+}
+
+.az-detail-copy li>.az-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  color: var(--az)
+}
+
+.az-compare td .az-icon {
+  width: 13px;
+  height: 13px
+}
+
+.az-compare td:nth-child(2) .az-icon {
+  color: var(--az)
+}
+
+.az-compare td:nth-child(3) .az-icon {
+  color: #202420
+}
+
+.az-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 215px
+}
+
+.az-cta a .az-icon {
+  width: 16px;
+  height: 16px
+}
+
+.az-trust {
+  display: flex !important;
+  gap: 14px;
+  align-items: center
+}
+
+.az-trust i {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-style: normal
+}
+
+.az-trust .az-icon {
+  width: 15px;
+  height: 15px
+}
+
+@media(max-width:760px) {
+  .site-header {
+    padding: 0 15px
+  }
+
+  .header-icon {
+    display: none
+  }
+
+  .header-actions {
+    gap: 10px
+  }
+
+  .brand {
+    font-size: 21px
+  }
+
+  .brand .brand-mark {
+    width: 25px;
+    height: 28px
+  }
+
+  .az-storefront {
+    padding-left: 12px;
+    padding-right: 12px
+  }
+
+  .az-intro h1 {
+    font-size: 43px
+  }
+
+  .az-trust {
+    flex-wrap: wrap
+  }
+}
+
+/* Wide-screen fidelity pass — reference baseline remains 1024px */
+.site-header,
+.az-storefront {
+  width: 100%;
+  max-width: 1440px
+}
+
+.site-header {
+  padding-left: clamp(44px, 3.45vw, 66px);
+  padding-right: clamp(44px, 3.45vw, 66px)
+}
+
+.az-storefront {
+  padding-left: clamp(35px, 3.4vw, 65px);
+  padding-right: clamp(35px, 3.4vw, 65px)
+}
+
+.az-review-head {
+  height: 30px;
+  display: flex;
+  align-items: flex-start
+}
+
+.az-review-head h2 {
+  margin: 0 auto 0 0
+}
+
+.az-review-head>span {
+  font-size: 10px;
+  color: #656965;
+  margin: 5px 19px 0 0
+}
+
+.az-review-head>button {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  margin: -3px 0 0 7px;
+  padding: 0;
+  border: 1px solid #deded8;
+  border-radius: 50%;
+  background: #fff;
+  color: #213a27
+}
+
+.az-review-head>button .az-icon {
+  width: 15px;
+  height: 15px
+}
+
+.az-review-grid article {
+  min-height: 158px;
+  display: flex;
+  flex-direction: column
+}
+
+.az-review-grid p {
+  height: auto;
+  min-height: 52px
+}
+
+.az-reviewer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto
+}
+
+.az-reviewer span {
+  display: flex;
+  flex-direction: column
+}
+
+.az-avatar {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d8a47e 0 46%, #5b372a 47% 100%);
+  box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px #d9d7d0
+}
+
+.az-avatar--two {
+  background: linear-gradient(145deg, #604336 0 46%, #d7a178 47% 100%)
+}
+
+.az-avatar--three {
+  background: linear-gradient(145deg, #e3b18b 0 46%, #513527 47% 100%)
+}
+
+.az-cta {
+  overflow: hidden;
+  background-color: #637e67;
+  background-image: linear-gradient(90deg, #284f3bc7 0%, #31543d88 48%, #31543d20 72%), url('aquazen-collection.png');
+  background-repeat: no-repeat;
+  background-position: center, right 42%;
+  background-size: 100% 100%, auto 305px
+}
+
+.az-cta:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 0 65%, #fff0)
+}
+
+@media(min-width:1201px) {
+  .az-top {
+    grid-template-columns: minmax(0, 1.72fr) minmax(420px, 1fr)
+  }
+
+  .az-gallery {
+    background-size: auto 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #faf9f5
+  }
+
+  .az-buy-card {
+    padding-left: 25px;
+    padding-right: 25px
+  }
+
+  .az-benefits {
+    grid-template-columns: repeat(4, 1fr) minmax(260px, 1.2fr)
+  }
+
+  .az-details {
+    grid-template-columns: 38% 31% 17% 14%
+  }
+
+  .az-social {
+    grid-template-columns: 35% 65%
+  }
+}
+
+@media(min-width:1441px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: 1600px
+  }
+
+  .az-top {
+    height: 610px
+  }
+
+  .az-benefits {
+    height: 190px
+  }
+
+  .az-details {
+    height: 330px
+  }
+
+  .az-cta {
+    height: 165px
+  }
+}
+
+@media(max-width:1024px) and (min-width:761px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: none
+  }
+
+  .az-top {
+    grid-template-columns: 63% 37%
+  }
+
+  .az-review-head>span {
+    display: none
+  }
+}
+
+/* Editorial typography, photographic thumbnails, full-bleed campaign footer */
+.az-storefront h1,
+.az-storefront h2,
+.az-storefront h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600
+}
+
+.az-intro h1 {
+  font-size: 61px;
+  line-height: .86;
+  letter-spacing: -2px
+}
+
+.az-buy-card h2 {
+  font-size: 31px;
+  line-height: .92;
+  letter-spacing: -.45px
+}
+
+.az-benefits h3 {
+  font-size: 20px;
+  line-height: 1;
+  margin: 10px 0 8px
+}
+
+.az-benefits p {
+  font-size: 12.5px;
+  line-height: 1.38
+}
+
+.az-accord h2 {
+  font-size: 29px;
+  line-height: 1
+}
+
+.az-accord button {
+  font-size: 12.5px;
+  padding: 11px 13px
+}
+
+.az-detail-copy h2 {
+  font-size: 28px;
+  line-height: .9
+}
+
+.az-detail-copy ul {
+  font-size: 11px;
+  line-height: 2.5
+}
+
+.az-social h2 {
+  font-size: 25px;
+  line-height: 1
+}
+
+.az-compare table {
+  font-size: 11px
+}
+
+.az-compare th {
+  padding: 8px
+}
+
+.az-compare td {
+  padding: 7px 11px
+}
+
+.az-review-grid article {
+  font-size: 12px
+}
+
+.az-review-grid p {
+  font-size: 12px;
+  line-height: 1.4
+}
+
+.az-cta h2 {
+  font-size: 38px;
+  line-height: .87;
+  letter-spacing: -.5px
+}
+
+.az-cta p {
+  font-size: 13px
+}
+
+.az-thumbs {
+  gap: 6px;
+  padding: 6px;
+  background: #fffefb;
+  box-shadow: 0 2px 10px #10251822
+}
+
+.az-thumbs i {
+  width: 54px;
+  height: 68px;
+  border: 1px solid #ebe9e3;
+  border-radius: 5px;
+  background-color: #f8f7f3;
+  background-image: url('aquazen-bottle-cutout.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain
+}
+
+.az-thumbs i:nth-child(1) {
+  filter: none
+}
+
+.az-thumbs i:nth-child(2) {
+  filter: grayscale(1) brightness(.24) contrast(1.3)
+}
+
+.az-thumbs i:nth-child(3) {
+  filter: grayscale(1) brightness(1.7) contrast(.65)
+}
+
+.az-thumbs i:nth-child(4) {
+  filter: hue-rotate(275deg) saturate(.55) brightness(1.25)
+}
+
+.az-thumbs i:nth-child(5) {
+  filter: none;
+  background-image: url('aquazen-detail.png');
+  background-size: cover
+}
+
+.az-thumbs .active {
+  outline-offset: 2px
+}
+
+.az-thumbs b {
+  width: 36px
+}
+
+.az-cta {
+  width: 100vw;
+  max-width: none;
+  height: 190px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: -28px;
+  padding-left: max(7vw, 72px);
+  padding-right: max(7vw, 72px);
+  background-color: #607c69;
+  background-image: linear-gradient(90deg, #1f4939d4 0%, #2a513da8 43%, #355c4650 67%, #355c460d 100%), url('aquazen-footer-banner.png');
+  background-repeat: no-repeat;
+  background-position: center, center 56%;
+  background-size: 100% 100%, cover
+}
+
+.az-cta>div,
+.az-cta>a,
+.az-cta>.az-trust {
+  position: relative;
+  z-index: 1
+}
+
+.az-cta>div {
+  min-width: 340px
+}
+
+.az-cta>a {
+  margin-left: 30px
+}
+
+.az-cta>.az-trust {
+  left: 37%;
+  bottom: 18px
+}
+
+@media(min-width:1201px) {
+  .az-benefits {
+    height: 205px
+  }
+
+  .az-details {
+    height: 355px
+  }
+
+  .az-social {
+    margin-top: 24px
+  }
+
+  .az-review-grid article {
+    min-height: 172px
+  }
+
+  .az-cta {
+    height: 205px
+  }
+}
+
+@media(max-width:760px) {
+  .az-intro h1 {
+    font-size: 48px
+  }
+
+  .az-thumbs {
+    left: 10px;
+    right: 10px;
+    overflow-x: auto
+  }
+
+  .az-thumbs i {
+    min-width: 48px
+  }
+
+  .az-cta {
+    width: 100vw;
+    height: auto;
+    min-height: 250px;
+    margin-left: calc(50% - 50vw);
+    padding: 35px 24px;
+    background-position: center, 68% center
+  }
+
+  .az-cta h2 {
+    font-size: 34px
+  }
+
+  .az-cta>div {
+    min-width: 0
+  }
+
+  .az-cta>a {
+    margin-left: 0
+  }
+
+  .az-cta>.az-trust {
+    left: auto
+  }
+}
+
+/* Bottle thumbnails: filter only the product cutout, never the card background */
+.az-thumbs i {
+  position: relative;
+  overflow: hidden;
+  background: #f8f7f3 !important;
+  filter: none !important
+}
+
+.az-thumbs i:before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background-image: url('aquazen-bottle-cutout.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: none
+}
+
+.az-thumbs i:nth-child(1):before {
+  filter: none
+}
+
+.az-thumbs i:nth-child(2):before {
+  filter: grayscale(1) brightness(.28) contrast(1.35)
+}
+
+.az-thumbs i:nth-child(3):before {
+  filter: grayscale(1) brightness(1.72) contrast(.5)
+}
+
+.az-thumbs i:nth-child(4):before {
+  filter: hue-rotate(275deg) saturate(.7) brightness(1.22)
+}
+
+.az-thumbs i:nth-child(5):before {
+  inset: 0;
+  background-image: url('aquazen-detail.png');
+  background-position: center;
+  background-size: cover;
+  filter: none
+}
+
+.az-thumbs i:nth-child(3):before {
+  filter: grayscale(1) brightness(2.45) contrast(.34)
+}
+
+.az-thumbs i:nth-child(4):before {
+  filter: hue-rotate(205deg) saturate(.82) brightness(1.28)
+}
+
+.az-thumbs i:nth-child(3):before {
+  filter: grayscale(1) brightness(3.25) contrast(.23)
+}
+
+/* Alignment corrections from reference comparison */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip
+}
+
+.az-storefront {
+  overflow: visible
+}
+
+.az-cta {
+  width: auto !important;
+  max-width: none;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  box-sizing: border-box
+}
+
+.az-cta>.az-trust {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 14px !important;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  margin: 0 !important
+}
+
+.az-cta>.az-trust i {
+  white-space: nowrap
+}
+
+.az-social {
+  align-items: stretch
+}
+
+.az-compare,
+.az-reviews {
+  min-width: 0;
+  display: flex;
+  flex-direction: column
+}
+
+.az-compare table {
+  flex: 1
+}
+
+.az-review-head {
+  flex: 0 0 34px;
+  height: 34px
+}
+
+.az-review-grid {
+  flex: 1;
+  align-items: stretch
+}
+
+.az-review-grid article {
+  height: 100%;
+  min-height: 0
+}
+
+.az-reviewer {
+  margin-top: auto
+}
+
+.az-use-icons {
+  width: auto;
+  box-sizing: border-box
+}
+
+.az-use-icons i {
+  min-width: 42px
+}
+
+.az-lifestyle {
+  overflow: hidden
+}
+
+@media(max-width:760px) {
+
+  html,
+  body {
+    overflow-x: hidden
+  }
+
+  .az-cta>.az-trust {
+    position: static !important;
+    transform: none;
+    white-space: normal;
+    margin-top: 18px !important
+  }
+
+  .az-social {
+    display: block
+  }
+
+  .az-reviews {
+    margin-top: 24px
+  }
+
+  .az-review-grid {
+    height: auto
+  }
+
+  .az-review-grid article {
+    min-height: 150px
+  }
+}
+
+
+/* Final reference lock: premium one-page product composition */
+body:has(.az-storefront) {
+  background: #fcfbf8;
+  color: #0e1510
+}
+
+.site-header,
+.az-storefront {
+  max-width: 1440px
+}
+
+.site-header {
+  height: 58px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #fff
+}
+
+.brand {
+  font-size: 27px;
+  letter-spacing: -1.05px;
+  font-weight: 700
+}
+
+.brand span:not(.brand-mark) {
+  font-weight: 500
+}
+
+.brand .brand-mark {
+  width: 31px;
+  height: 34px;
+  margin-right: 8px
+}
+
+.main-nav {
+  left: 25.35%;
+  gap: 38px
+}
+
+.main-nav a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #080d0a
+}
+
+.header-actions {
+  gap: 24px
+}
+
+.button--small {
+  min-width: 124px;
+  height: 42px;
+  padding: 0 26px;
+  border-radius: 28px;
+  font-size: 12px
+}
+
+.az-storefront {
+  padding: 0 50px 0;
+  background: #fcfbf8;
+  font-size: 14px;
+  overflow: hidden
+}
+
+.az-storefront h1,
+.az-storefront h2,
+.az-storefront h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  color: #101510
+}
+
+.az-top {
+  height: 720px;
+  grid-template-columns: minmax(0, 1.73fr) 430px;
+  gap: 20px
+}
+
+.az-gallery {
+  border-radius: 0;
+  background-image: linear-gradient(90deg, #fff 0%, #fffc 26%, #fff5 45%, #fff0 64%), url('aquazen-hero.png');
+  background-size: 100% 100%, cover;
+  background-position: center, right center
+}
+
+.az-intro {
+  left: 0;
+  top: 38px
+}
+
+.az-intro>p {
+  font-size: 14px;
+  letter-spacing: 6px;
+  margin-bottom: 18px;
+  font-weight: 500
+}
+
+.az-intro h1 {
+  font-size: 80px;
+  line-height: .86;
+  letter-spacing: -3.2px;
+  margin-bottom: 22px
+}
+
+.az-intro>span {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #333b35
+}
+
+.az-intro ul {
+  margin: 18px 0 0;
+  line-height: 2.05;
+  font-size: 16px
+}
+
+.az-intro li>.az-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px
+}
+
+.az-intro em {
+  font-size: 39px;
+  line-height: .78;
+  margin-top: 28px;
+  letter-spacing: .2px
+}
+
+.az-script {
+  right: 36px;
+  top: 120px;
+  font-size: 37px;
+  line-height: .82
+}
+
+.az-words {
+  right: 48px;
+  top: 282px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 1.62
+}
+
+.az-thumbs {
+  right: 18px;
+  bottom: 18px;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px #1124162e
+}
+
+.az-thumbs i {
+  width: 62px;
+  height: 78px;
+  border-radius: 5px
+}
+
+.az-thumbs b {
+  width: 42px
+}
+
+.az-buy-card {
+  margin-top: 10px;
+  border-radius: 18px;
+  padding: 26px 32px;
+  box-shadow: 0 14px 34px #26331e0e
+}
+
+.az-offer {
+  font-size: 12px
+}
+
+.az-offer b {
+  font-size: 11px;
+  padding: 7px 13px
+}
+
+.az-buy-card h2 {
+  font-size: 35px;
+  line-height: .94;
+  letter-spacing: -.55px;
+  margin: 24px 0 4px
+}
+
+.az-sub {
+  font-size: 16px
+}
+
+.az-rating {
+  margin: 15px 0 13px;
+  font-size: 15px
+}
+
+.az-rating strong .az-icon {
+  width: 16px;
+  height: 16px
+}
+
+.az-loved {
+  font-size: 13px;
+  margin: 12px 0 22px
+}
+
+.az-loved i {
+  width: 27px;
+  height: 27px
+}
+
+.az-price {
+  font-size: 37px;
+  letter-spacing: -.9px;
+  margin: 10px 0 15px
+}
+
+.az-price del {
+  font-size: 18px;
+  margin-left: 9px
+}
+
+.az-price small {
+  font-size: 12px;
+  padding: 7px 14px;
+  margin-left: 8px
+}
+
+.az-colors {
+  gap: 11px;
+  margin: 13px 0 15px
+}
+
+.az-colors i {
+  width: 39px;
+  height: 39px
+}
+
+.az-quantity {
+  width: 124px;
+  height: 43px;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 18px;
+  font-size: 17px
+}
+
+.az-cart,
+.az-buy {
+  height: 58px;
+  border-radius: 9px;
+  font-size: 19px
+}
+
+.az-buy {
+  margin-top: 12px
+}
+
+.az-card-features {
+  margin-top: 24px;
+  padding-top: 20px
+}
+
+.az-card-features span>.az-icon {
+  width: 36px;
+  height: 36px;
+  padding: 8px
+}
+
+.az-card-features b {
+  font-size: 12px;
+  line-height: 1.12;
+  margin-top: 8px
+}
+
+.az-benefits {
+  height: 200px;
+  margin: 20px 0 20px;
+  grid-template-columns: repeat(4, 1fr) 300px;
+  border-radius: 0;
+  background: #f7f5f0
+}
+
+.az-benefits article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 18px 22px
+}
+
+.az-benefits article>i {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 11px
+}
+
+.az-benefits article>i>.az-icon {
+  width: 35px;
+  height: 35px
+}
+
+.az-benefits h3 {
+  font-size: 23px;
+  line-height: 1.02;
+  margin: 0 0 10px
+}
+
+.az-benefits p {
+  font-size: 14px;
+  line-height: 1.35
+}
+
+.az-benefits aside {
+  padding: 42px 24px;
+  font-size: 40px;
+  line-height: .78;
+  background-position: center
+}
+
+.az-benefits aside small {
+  font-size: 11px;
+  margin-top: 22px;
+  font-weight: 700
+}
+
+.az-details {
+  height: 385px;
+  grid-template-columns: 39% 27% 17% 17%;
+  gap: 24px
+}
+
+.az-lifestyle {
+  border-radius: 8px;
+  padding: 38px 26px;
+  background-position: center
+}
+
+.az-lifestyle b {
+  font-size: 25px;
+  line-height: 1.05;
+  letter-spacing: 2px
+}
+
+.az-use-icons {
+  left: 26px !important;
+  right: 26px !important;
+  bottom: 19px !important
+}
+
+.az-use-icons .az-icon {
+  width: 28px;
+  height: 28px
+}
+
+.az-use-icons small {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px
+}
+
+.az-accord {
+  padding: 18px 0
+}
+
+.az-accord h2 {
+  font-size: 34px;
+  margin-bottom: 18px
+}
+
+.az-accord button {
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 17px;
+  margin-bottom: 9px;
+  font-size: 14px;
+  background: #fff
+}
+
+.az-guarantee {
+  margin-top: 28px !important;
+  font-size: 13px
+}
+
+.az-detail-photo {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center
+}
+
+.az-detail-copy {
+  padding: 48px 0 0 0
+}
+
+.az-detail-copy h2 {
+  font-size: 34px;
+  line-height: .91
+}
+
+.az-detail-copy hr {
+  width: 48px;
+  margin: 20px 0;
+  border-top-width: 2px
+}
+
+.az-detail-copy ul {
+  font-size: 13px;
+  line-height: 2.35
+}
+
+.az-social {
+  grid-template-columns: 37% minmax(0, 63%);
+  gap: 36px;
+  margin-top: 22px;
+  margin-bottom: 26px
+}
+
+.az-social h2 {
+  font-size: 29px;
+  margin-bottom: 10px
+}
+
+.az-compare table {
+  font-size: 13px;
+  border-radius: 7px
+}
+
+.az-compare th {
+  height: 36px;
+  padding: 0 12px
+}
+
+.az-compare td {
+  height: 35px;
+  padding: 0 15px
+}
+
+.az-review-head {
+  height: 40px;
+  flex-basis: 40px
+}
+
+.az-review-head h2 {
+  font-size: 30px
+}
+
+.az-review-head>span {
+  font-size: 12px;
+  margin-top: 8px
+}
+
+.az-review-head>button {
+  width: 34px;
+  height: 34px
+}
+
+.az-review-grid {
+  gap: 15px
+}
+
+.az-review-grid article {
+  border-radius: 7px;
+  padding: 18px 19px;
+  font-size: 14px;
+  min-height: 170px
+}
+
+.az-review-grid p {
+  font-size: 14px;
+  line-height: 1.45;
+  min-height: 58px
+}
+
+.az-reviewer {
+  gap: 11px
+}
+
+.az-avatar {
+  width: 40px;
+  height: 40px
+}
+
+.az-cta {
+  height: 214px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 48px 84px 40px !important;
+  background-image: linear-gradient(90deg, #173d2ccc 0%, #284e3aa0 43%, #315d4352 69%, #315d4310 100%), url('aquazen-footer-banner.png') !important;
+  background-position: center, center 58% !important;
+  background-size: 100% 100%, cover !important
+}
+
+.az-cta h2 {
+  font-size: 43px;
+  line-height: .88;
+  letter-spacing: -.8px
+}
+
+.az-cta p {
+  font-size: 16px;
+  margin: 16px 0 0
+}
+
+.az-cta>a {
+  height: 52px;
+  min-width: 260px;
+  margin-left: 42px;
+  border-radius: 32px;
+  font-size: 15px
+}
+
+.az-cta>.az-trust {
+  bottom: 22px !important;
+  font-size: 11px;
+  gap: 24px
+}
+
+@media(max-width:1200px) and (min-width:761px) {
+  .site-header {
+    padding-left: 46px;
+    padding-right: 46px
+  }
+
+  .az-storefront {
+    padding-left: 36px;
+    padding-right: 36px
+  }
+
+  .az-top {
+    height: 650px;
+    grid-template-columns: minmax(0, 1.64fr) 380px
+  }
+
+  .az-intro h1 {
+    font-size: 67px
+  }
+
+  .az-intro>span {
+    font-size: 15px
+  }
+
+  .az-intro ul {
+    font-size: 14px
+  }
+
+  .az-buy-card {
+    padding: 21px 24px
+  }
+
+  .az-buy-card h2 {
+    font-size: 30px
+  }
+
+  .az-sub {
+    font-size: 14px
+  }
+
+  .az-price {
+    font-size: 32px
+  }
+
+  .az-benefits {
+    grid-template-columns: repeat(4, 1fr) 250px
+  }
+
+  .az-details {
+    grid-template-columns: 38% 29% 17% 16%;
+    gap: 18px
+  }
+
+  .az-social {
+    gap: 28px
+  }
+}
+
+
+/* 1024px reference viewport lock */
+.az-storefront {
+  overflow: visible
+}
+
+@media(min-width:761px) and (max-width:1200px) {
+  .site-header {
+    height: 52px;
+    padding-left: 46px;
+    padding-right: 46px
+  }
+
+  .brand {
+    font-size: 25px
+  }
+
+  .brand .brand-mark {
+    width: 29px;
+    height: 32px
+  }
+
+  .main-nav {
+    left: 25.2%;
+    gap: 31px
+  }
+
+  .main-nav a {
+    font-size: 11px
+  }
+
+  .header-actions {
+    gap: 20px
+  }
+
+  .button--small {
+    height: 38px;
+    min-width: 105px;
+    padding: 0 22px;
+    font-size: 11px
+  }
+
+  .az-storefront {
+    max-width: 1024px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 13px
+  }
+
+  .az-top {
+    height: 565px;
+    grid-template-columns: 63% 37%;
+    gap: 17px
+  }
+
+  .az-gallery {
+    background-size: cover;
+    background-position: center
+  }
+
+  .az-intro {
+    top: 23px;
+    left: 0
+  }
+
+  .az-intro>p {
+    font-size: 11px;
+    letter-spacing: 3.6px;
+    margin-bottom: 13px
+  }
+
+  .az-intro h1 {
+    font-size: 61px;
+    line-height: .86;
+    letter-spacing: -2px;
+    margin-bottom: 16px
+  }
+
+  .az-intro>span {
+    font-size: 13px;
+    line-height: 1.35
+  }
+
+  .az-intro ul {
+    font-size: 13px;
+    line-height: 1.95;
+    margin-top: 13px
+  }
+
+  .az-intro li>.az-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 9px
+  }
+
+  .az-intro em {
+    font-size: 31px;
+    line-height: .78;
+    margin-top: 18px
+  }
+
+  .az-script {
+    right: 26px;
+    top: 99px;
+    font-size: 31px;
+    line-height: .82
+  }
+
+  .az-words {
+    right: 31px;
+    top: 223px;
+    font-size: 11px;
+    letter-spacing: 1.8px
+  }
+
+  .az-thumbs {
+    right: 14px;
+    bottom: 16px;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 7px
+  }
+
+  .az-thumbs i {
+    width: 54px;
+    height: 68px
+  }
+
+  .az-thumbs b {
+    width: 36px
+  }
+
+  .az-buy-card {
+    margin-top: 8px;
+    border-radius: 16px;
+    padding: 17px 21px
+  }
+
+  .az-offer {
+    font-size: 11px
+  }
+
+  .az-offer b {
+    font-size: 10px;
+    padding: 6px 11px
+  }
+
+  .az-buy-card h2 {
+    font-size: 31px;
+    line-height: .92;
+    margin: 15px 0 3px
+  }
+
+  .az-sub {
+    font-size: 13px
+  }
+
+  .az-rating {
+    font-size: 13px;
+    margin: 10px 0
+  }
+
+  .az-loved {
+    font-size: 11px;
+    margin: 9px 0 12px
+  }
+
+  .az-loved i {
+    width: 23px;
+    height: 23px
+  }
+
+  .az-price {
+    font-size: 30px;
+    margin: 11px 0
+  }
+
+  .az-price del {
+    font-size: 15px
+  }
+
+  .az-price small {
+    font-size: 10px;
+    padding: 6px 11px
+  }
+
+  .az-colors i {
+    width: 31px;
+    height: 31px
+  }
+
+  .az-colors {
+    gap: 9px;
+    margin: 10px 0
+  }
+
+  .az-quantity {
+    width: 100px;
+    height: auto;
+    padding: 7px;
+    margin-bottom: 11px;
+    font-size: 14px
+  }
+
+  .az-cart,
+  .az-buy {
+    height: auto;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 15px
+  }
+
+  .az-buy {
+    margin-top: 8px
+  }
+
+  .az-card-features {
+    margin-top: 11px;
+    padding-top: 10px
+  }
+
+  .az-card-features span>.az-icon {
+    width: 29px;
+    height: 29px;
+    padding: 7px
+  }
+
+  .az-card-features b {
+    font-size: 10px;
+    margin-top: 6px
+  }
+
+  .az-benefits {
+    height: 178px;
+    margin: 14px 0;
+    grid-template-columns: repeat(4, 1fr) 1.2fr;
+    border-radius: 13px
+  }
+
+  .az-benefits article {
+    margin: 13px 0;
+    padding: 7px;
+    display: block
+  }
+
+  .az-benefits article>i {
+    width: 46px;
+    height: 46px;
+    margin: 0 auto
+  }
+
+  .az-benefits article>i>.az-icon {
+    width: 29px;
+    height: 29px
+  }
+
+  .az-benefits h3 {
+    font-size: 20px;
+    margin: 10px 0 8px
+  }
+
+  .az-benefits p {
+    font-size: 12.5px;
+    line-height: 1.38
+  }
+
+  .az-benefits aside {
+    padding: 25px 15px;
+    font-size: 31px
+  }
+
+  .az-benefits aside small {
+    font-size: 9px;
+    margin-top: 15px
+  }
+
+  .az-details {
+    height: 304px;
+    grid-template-columns: 38% 31% 17% 14%;
+    gap: 12px
+  }
+
+  .az-lifestyle {
+    padding: 27px 18px
+  }
+
+  .az-lifestyle b {
+    font-size: 17px;
+    line-height: 1.06
+  }
+
+  .az-use-icons {
+    left: 17px !important;
+    right: 17px !important;
+    bottom: 10px !important
+  }
+
+  .az-use-icons .az-icon {
+    width: 23px;
+    height: 23px
+  }
+
+  .az-use-icons small {
+    font-size: 9px
+  }
+
+  .az-accord {
+    padding: 8px
+  }
+
+  .az-accord h2 {
+    font-size: 29px;
+    margin-bottom: 11px
+  }
+
+  .az-accord button {
+    height: auto;
+    padding: 11px 13px;
+    margin-bottom: 5px;
+    font-size: 12.5px
+  }
+
+  .az-guarantee {
+    margin-top: 20px !important;
+    font-size: 11px
+  }
+
+  .az-detail-copy {
+    padding: 23px 8px
+  }
+
+  .az-detail-copy h2 {
+    font-size: 28px
+  }
+
+  .az-detail-copy ul {
+    font-size: 11px;
+    line-height: 2.5
+  }
+
+  .az-social {
+    grid-template-columns: 37% 63%;
+    gap: 25px;
+    margin-top: 18px;
+    margin-bottom: 20px
+  }
+
+  .az-social h2 {
+    font-size: 25px
+  }
+
+  .az-compare table {
+    font-size: 11px
+  }
+
+  .az-compare th {
+    height: auto;
+    padding: 8px
+  }
+
+  .az-compare td {
+    height: auto;
+    padding: 7px 11px
+  }
+
+  .az-review-head {
+    height: 34px;
+    flex-basis: 34px
+  }
+
+  .az-review-head h2 {
+    font-size: 25px
+  }
+
+  .az-review-head>span {
+    font-size: 10px;
+    margin-top: 5px
+  }
+
+  .az-review-head>button {
+    width: 29px;
+    height: 29px
+  }
+
+  .az-review-grid {
+    gap: 10px
+  }
+
+  .az-review-grid article {
+    min-height: 158px;
+    padding: 14px;
+    font-size: 12px
+  }
+
+  .az-review-grid p {
+    font-size: 12px;
+    min-height: 52px
+  }
+
+  .az-avatar {
+    width: 35px;
+    height: 35px
+  }
+
+  .az-cta {
+    height: 190px !important;
+    padding: 34px 72px 38px !important
+  }
+
+  .az-cta h2 {
+    font-size: 38px
+  }
+
+  .az-cta p {
+    font-size: 13px
+  }
+
+  .az-cta>a {
+    height: auto;
+    min-width: 215px;
+    margin-left: 30px;
+    padding: 13px 34px;
+    font-size: 13px
+  }
+
+  .az-cta>.az-trust {
+    bottom: 14px !important;
+    font-size: 9px;
+    gap: 14px
+  }
+}
+
+
+/* Lower-page vertical rhythm tuned to the supplied 1024px mockup */
+@media(min-width:761px) and (max-width:1200px) {
+  .az-top {
+    height: 560px
+  }
+
+  .az-benefits {
+    height: 176px;
+    margin: 10px 0 14px
+  }
+
+  .az-details {
+    height: 300px
+  }
+
+  .az-social {
+    height: 216px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    align-items: stretch
+  }
+
+  .az-compare table {
+    height: 100%
+  }
+
+  .az-compare th {
+    height: 30px;
+    padding: 0 10px
+  }
+
+  .az-compare td {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 10.5px
+  }
+
+  .az-review-head {
+    height: 32px;
+    flex-basis: 32px
+  }
+
+  .az-review-head h2 {
+    font-size: 24px
+  }
+
+  .az-review-head>span {
+    margin-top: 4px
+  }
+
+  .az-review-head>button {
+    width: 28px;
+    height: 28px
+  }
+
+  .az-review-grid {
+    height: calc(100% - 32px)
+  }
+
+  .az-review-grid article {
+    height: 100%;
+    min-height: 0;
+    padding: 12px 14px;
+    font-size: 11.5px
+  }
+
+  .az-review-grid p {
+    font-size: 11.5px;
+    line-height: 1.35;
+    min-height: 46px;
+    margin: 6px 0
+  }
+
+  .az-avatar {
+    width: 34px;
+    height: 34px
+  }
+
+  .az-cta {
+    height: 190px !important
+  }
+}
+
+
+/* Shell alignment: header and storefront share the same desktop width */
+body:has(.az-storefront) {
+  overflow-x: hidden
+}
+
+.site-header,
+.az-storefront {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media(min-width:1201px) {
+  .site-header {
+    padding-left: 64px;
+    padding-right: 64px
+  }
+
+  .az-storefront {
+    padding-left: 64px;
+    padding-right: 64px
+  }
+
+  .az-top {
+    grid-template-columns: minmax(0, 1.73fr) 430px
+  }
+
+  .az-gallery {
+    background-position: center
+  }
+}
+
+@media(min-width:761px) and (max-width:1200px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: 1024px
+  }
+
+  .site-header {
+    padding-left: 35px;
+    padding-right: 35px
+  }
+
+  .az-storefront {
+    padding-left: 35px;
+    padding-right: 35px
+  }
+}
+
+@media(max-width:760px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: none
+  }
+}
+
+
+/* Match body edge to header edge on desktop: no extra storefront inset */
+@media(min-width:1201px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .az-storefront {
+    padding-left: 0;
+    padding-right: 0
+  }
+
+  .az-top {
+    gap: 20px
+  }
+
+  .az-gallery {
+    border-radius: 0
+  }
+
+  .az-intro {
+    left: 70px
+  }
+
+  .az-benefits,
+  .az-details,
+  .az-social {
+    margin-left: 0;
+    margin-right: 0
+  }
+}
+
+
+/* Responsive lock: tablet and mobile are real layouts, not squeezed desktop */
+@media(max-width:900px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important
+  }
+
+  .site-header {
+    max-width: none;
+    width: 100%;
+    height: 58px;
+    padding: 0 18px !important;
+    gap: 12px
+  }
+
+  .brand {
+    font-size: 24px;
+    letter-spacing: -.8px
+  }
+
+  .brand .brand-mark {
+    width: 28px;
+    height: 31px;
+    margin-right: 7px
+  }
+
+  .main-nav {
+    display: none !important
+  }
+
+  .header-actions {
+    margin-left: auto;
+    gap: 14px
+  }
+
+  .header-icon {
+    display: grid
+  }
+
+  .cart {
+    display: grid
+  }
+
+  .button--small {
+    height: 39px;
+    min-width: 104px;
+    padding: 0 18px;
+    font-size: 11px
+  }
+
+  .az-storefront {
+    max-width: none;
+    width: 100%;
+    padding: 0 16px !important;
+    overflow: hidden;
+    background: #fcfbf8
+  }
+
+  .az-top {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin: 0
+  }
+
+  .az-gallery {
+    min-height: 680px;
+    height: auto !important;
+    border-radius: 0 0 14px 14px;
+    background-image: linear-gradient(90deg, #fff 0%, #fffdf6de 52%, #fff8 72%, #fff0 100%), url('aquazen-hero.png');
+    background-size: 100% 100%, cover;
+    background-position: center, right center;
+    overflow: hidden
+  }
+
+  .az-intro {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    max-width: 430px;
+    padding: 34px 0 160px 0;
+    z-index: 2
+  }
+
+  .az-intro>p {
+    font-size: 11px !important;
+    letter-spacing: 3.4px !important;
+    margin: 0 0 13px !important
+  }
+
+  .az-intro h1 {
+    font-size: 58px !important;
+    line-height: .87 !important;
+    letter-spacing: -1.8px !important;
+    margin: 0 0 16px !important
+  }
+
+  .az-intro>span {
+    font-size: 14px !important;
+    line-height: 1.38 !important;
+    color: #263129
+  }
+
+  .az-intro ul {
+    font-size: 13px !important;
+    line-height: 1.95 !important;
+    margin: 14px 0 0 !important
+  }
+
+  .az-intro em {
+    font-size: 31px !important;
+    line-height: .78 !important;
+    margin-top: 23px !important
+  }
+
+  .az-script {
+    right: 20px !important;
+    top: 110px !important;
+    font-size: 30px !important;
+    line-height: .82 !important;
+    z-index: 1
+  }
+
+  .az-words {
+    right: 22px !important;
+    top: 230px !important;
+    font-size: 11px !important;
+    letter-spacing: 1.6px !important;
+    z-index: 1
+  }
+
+  .az-thumbs {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 7px;
+    border-radius: 10px;
+    scrollbar-width: none
+  }
+
+  .az-thumbs::-webkit-scrollbar {
+    display: none
+  }
+
+  .az-thumbs i {
+    flex: 0 0 56px;
+    width: 56px !important;
+    height: 72px !important
+  }
+
+  .az-thumbs b {
+    flex: 0 0 38px;
+    width: 38px !important
+  }
+
+  .az-buy-card {
+    margin: 0 !important;
+    border-radius: 16px;
+    padding: 22px 20px !important
+  }
+
+  .az-buy-card h2 {
+    font-size: 32px !important
+  }
+
+  .az-sub {
+    font-size: 14px
+  }
+
+  .az-price {
+    font-size: 33px !important
+  }
+
+  .az-card-features {
+    gap: 8px
+  }
+
+  .az-card-features span>.az-icon {
+    width: 30px;
+    height: 30px
+  }
+
+  .az-card-features b {
+    font-size: 10px
+  }
+
+  .az-benefits {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    margin: 16px 0 !important;
+    border-radius: 14px;
+    overflow: hidden
+  }
+
+  .az-benefits article {
+    margin: 0 !important;
+    padding: 22px 14px !important
+  }
+
+  .az-benefits aside {
+    grid-column: 1/-1;
+    min-height: 170px;
+    padding: 35px 20px !important;
+    font-size: 34px !important
+  }
+
+  .az-details {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important
+  }
+
+  .az-lifestyle {
+    grid-column: 1/-1;
+    min-height: 380px;
+    padding: 28px 20px !important
+  }
+
+  .az-lifestyle b {
+    font-size: 23px !important
+  }
+
+  .az-accord {
+    padding: 4px 0 !important
+  }
+
+  .az-detail-photo {
+    min-height: 320px
+  }
+
+  .az-detail-copy {
+    padding: 26px 4px 0 !important
+  }
+
+  .az-detail-copy h2 {
+    font-size: 31px !important
+  }
+
+  .az-social {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    margin: 22px 0 !important
+  }
+
+  .az-compare,
+  .az-reviews {
+    display: block
+  }
+
+  .az-compare table {
+    height: auto !important
+  }
+
+  .az-review-head {
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px
+  }
+
+  .az-review-head h2 {
+    font-size: 28px !important;
+    flex: 1 1 100%
+  }
+
+  .az-review-head>span {
+    margin: 0 auto 0 0
+  }
+
+  .az-review-grid {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important
+  }
+
+  .az-review-grid article {
+    height: auto !important;
+    min-height: 170px !important
+  }
+
+  .az-review-grid article:first-child {
+    grid-column: 1/-1
+  }
+
+  .az-cta {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 260px !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    padding: 36px 22px 32px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center;
+    gap: 18px !important;
+    background-position: center, center !important
+  }
+
+  .az-cta>div {
+    min-width: 0 !important
+  }
+
+  .az-cta h2 {
+    font-size: 38px !important
+  }
+
+  .az-cta p {
+    font-size: 14px !important
+  }
+
+  .az-cta>a {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 !important
+  }
+
+  .az-cta>.az-trust {
+    position: static !important;
+    transform: none !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px !important;
+    white-space: normal !important;
+    font-size: 11px !important
+  }
+}
+
+@media(max-width:560px) {
+  .site-header {
+    height: 56px;
+    padding: 0 14px !important
+  }
+
+  .brand {
+    font-size: 22px
+  }
+
+  .header-icon,
+  .cart {
+    display: none !important
+  }
+
+  .button--small {
+    min-width: 94px;
+    height: 37px;
+    padding: 0 15px
+  }
+
+  .az-storefront {
+    padding: 0 12px !important
+  }
+
+  .az-gallery {
+    min-height: 640px;
+    background-image: linear-gradient(180deg, #fffc 0%, #fff8 46%, #fff2 76%, #fff0 100%), url('aquazen-hero.png');
+    background-position: center top, 61% center
+  }
+
+  .az-intro {
+    max-width: 100%;
+    padding-top: 28px;
+    padding-bottom: 138px
+  }
+
+  .az-intro h1 {
+    font-size: 46px !important;
+    line-height: .9 !important;
+    letter-spacing: -1.3px !important
+  }
+
+  .az-intro>span {
+    font-size: 13px !important
+  }
+
+  .az-intro ul {
+    font-size: 12.5px !important
+  }
+
+  .az-intro em {
+    font-size: 29px !important
+  }
+
+  .az-script {
+    top: 248px !important;
+    right: 16px !important;
+    font-size: 26px !important
+  }
+
+  .az-words {
+    display: none !important
+  }
+
+  .az-thumbs {
+    left: 10px !important;
+    right: 10px !important
+  }
+
+  .az-thumbs i {
+    flex-basis: 48px;
+    width: 48px !important;
+    height: 64px !important
+  }
+
+  .az-thumbs b {
+    flex-basis: 34px;
+    width: 34px !important
+  }
+
+  .az-buy-card {
+    padding: 20px 16px !important
+  }
+
+  .az-offer {
+    align-items: flex-start;
+    gap: 12px
+  }
+
+  .az-offer span {
+    text-align: right
+  }
+
+  .az-buy-card h2 {
+    font-size: 29px !important
+  }
+
+  .az-rating {
+    flex-wrap: wrap;
+    font-size: 12px
+  }
+
+  .az-loved {
+    font-size: 11px
+  }
+
+  .az-price {
+    font-size: 31px !important
+  }
+
+  .az-colors i {
+    width: 34px;
+    height: 34px
+  }
+
+  .az-card-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 18px
+  }
+
+  .az-benefits {
+    grid-template-columns: 1fr !important
+  }
+
+  .az-benefits article {
+    padding: 24px 18px !important
+  }
+
+  .az-benefits h3 {
+    font-size: 22px !important
+  }
+
+  .az-benefits aside {
+    min-height: 160px
+  }
+
+  .az-details {
+    grid-template-columns: 1fr !important
+  }
+
+  .az-lifestyle {
+    min-height: 330px
+  }
+
+  .az-use-icons {
+    left: 18px !important;
+    right: 18px !important
+  }
+
+  .az-use-icons i {
+    min-width: auto !important
+  }
+
+  .az-use-icons .az-icon {
+    width: 24px;
+    height: 24px
+  }
+
+  .az-use-icons small {
+    font-size: 10px !important
+  }
+
+  .az-detail-photo {
+    min-height: 300px
+  }
+
+  .az-detail-copy {
+    padding: 22px 0 !important
+  }
+
+  .az-detail-copy h2 {
+    font-size: 30px !important
+  }
+
+  .az-social h2 {
+    font-size: 27px !important
+  }
+
+  .az-compare {
+    overflow-x: auto
+  }
+
+  .az-compare table {
+    min-width: 420px
+  }
+
+  .az-review-head>button {
+    width: 32px;
+    height: 32px
+  }
+
+  .az-review-grid {
+    grid-template-columns: 1fr !important
+  }
+
+  .az-review-grid article:first-child {
+    grid-column: auto
+  }
+
+  .az-review-grid article {
+    min-height: auto !important;
+    padding: 16px !important
+  }
+
+  .az-review-grid p {
+    min-height: auto !important
+  }
+
+  .az-cta {
+    min-height: 310px !important;
+    padding: 34px 18px !important;
+    background-position: center, 61% center !important
+  }
+
+  .az-cta h2 {
+    font-size: 34px !important
+  }
+
+  .az-cta>a {
+    max-width: none
+  }
+
+  .az-cta>.az-trust i {
+    white-space: normal !important
+  }
+}
+
+@media(min-width:901px) and (max-width:1200px) {
+
+  .site-header,
+  .az-storefront {
+    max-width: 1024px
+  }
+
+  .site-header {
+    padding-left: 35px !important;
+    padding-right: 35px !important
+  }
+
+  .az-storefront {
+    padding-left: 35px !important;
+    padding-right: 35px !important
+  }
+}
+
+/* Universal product detail page */
+body:not(:has(.az-storefront)) .site-footer{display:flex}
+.up-product{--up-green:#24492d;--up-ink:#101510;--up-soft:#f7f5ef;max-width:1440px;margin:0 auto;padding:34px 56px 64px;background:#fcfbf8;color:var(--up-ink);font-family:'DM Sans',Arial,sans-serif}
+.up-product h1,.up-product h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-.7px;color:var(--up-ink)}
+.up-product__grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(390px,.72fr);gap:42px;align-items:start}
+.up-product__media{min-width:0}.up-product__stage{position:relative;overflow:hidden;border-radius:18px;background:linear-gradient(135deg,#f4f2ed,#fff);box-shadow:0 18px 50px #1d2c180c}.up-product__figure{display:none;margin:0;aspect-ratio:1/1;background:#f5f3ee}.up-product__figure.is-active{display:block}.up-product__figure img,.up-product__placeholder svg{width:100%;height:100%;object-fit:contain;display:block}.up-product__placeholder svg{padding:12%;opacity:.55}
+.up-product__thumbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(76px,1fr));gap:10px;margin-top:12px}.up-product__thumb{height:88px;border:1px solid #e4e0d7;border-radius:10px;background:#fff;cursor:pointer;overflow:hidden;padding:5px}.up-product__thumb.is-active{border-color:var(--up-green);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--up-green)}.up-product__thumb img{width:100%;height:100%;object-fit:contain}
+.up-product__info{position:sticky;top:18px;border-radius:22px;background:#fff;padding:34px;box-shadow:0 16px 45px #1f2a1710}.up-product__vendor{margin:0 0 8px;font-size:12px;letter-spacing:3.8px;text-transform:uppercase;color:var(--up-green);font-weight:700}.up-product h1{font-size:47px;line-height:.94;margin:0 0 14px}.up-product__rating{display:flex;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}.up-product__rating span{display:inline-flex;gap:2px;color:#ffb100}.up-product__rating .az-icon{width:16px;height:16px}.up-product__rating small{color:#525850}.up-product__price{display:flex;align-items:center;gap:12px;margin:16px 0 18px}.up-product__price span{font-size:36px;font-weight:800;letter-spacing:-.7px}.up-product__price del{font-size:18px;color:#72766f}.up-product__summary{font-size:15px;line-height:1.6;color:#3d443e;border-top:1px solid #ece8df;border-bottom:1px solid #ece8df;padding:18px 0;margin-bottom:20px}
+.up-product__option{border:0;padding:0;margin:0 0 17px}.up-product__option legend{font-weight:700;margin-bottom:9px}.up-product__option legend span{color:var(--up-green)}.up-product__values{display:flex;flex-wrap:wrap;gap:9px}.up-product__pill input{position:absolute;opacity:0;pointer-events:none}.up-product__pill span{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;border:1px solid #ddd8ce;border-radius:999px;background:#fbfaf7;font-weight:700;cursor:pointer}.up-product__pill input:checked+span{border-color:var(--up-green);background:#e9efe8;color:var(--up-green);box-shadow:inset 0 0 0 1px var(--up-green)}
+.up-product__buy-row{display:grid;grid-template-columns:112px 1fr;gap:12px;margin-top:20px}.up-product__qty{height:56px;border:1px solid #ddd8ce;border-radius:12px;background:#fff;display:flex;align-items:center;gap:8px;padding:0 12px;font-weight:700}.up-product__qty input{width:42px;border:0;font:inherit;text-align:center;background:transparent}.up-product__cart{height:56px;border:0;border-radius:12px;background:var(--up-green);color:#fff;font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}.up-product__cart:disabled{opacity:.5;cursor:not-allowed}.up-product__cart .az-icon{width:21px;height:21px}.shopify-payment-button{margin-top:12px}.shopify-payment-button__button{border-radius:12px!important;min-height:54px!important;font-weight:800!important}
+.up-product__trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;padding-top:20px;border-top:1px solid #ece8df}.up-product__trust span{display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;font-size:12px}.up-product__trust .az-icon{box-sizing:content-box;width:25px;height:25px;padding:9px;border:1.5px solid var(--up-green);border-radius:50%;color:var(--up-green)}
+.up-product__below{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:32px;margin-top:36px}.up-product__tabs{border-radius:18px;background:#fff;box-shadow:0 16px 45px #1f2a1710;overflow:hidden}.up-product__tabs details+details{border-top:1px solid #ece8df}.up-product__tabs summary{list-style:none;cursor:pointer;padding:22px 26px;font-weight:800;display:flex;justify-content:space-between}.up-product__tabs summary::-webkit-details-marker{display:none}.up-product__tabs summary:after{content:'+';font-size:22px;line-height:1}.up-product__tabs details[open] summary:after{content:'-'}.up-product__tabs details>div{padding:0 26px 24px;color:#3d443e;line-height:1.65}.up-product__side-card{border-radius:18px;background:linear-gradient(145deg,#f5f3ed,#fff);padding:30px;box-shadow:0 16px 45px #1f2a1710}.up-product__side-card h2{font-size:30px;line-height:.95;margin:0 0 18px}.up-product__side-card ul{list-style:none;padding:0;margin:0;display:grid;gap:13px}.up-product__side-card li{display:flex;align-items:center;gap:10px}.up-product__side-card .az-icon{width:17px;height:17px;color:var(--up-green);flex:0 0 auto}
+@media(max-width:980px){.up-product{padding:22px 18px 46px}.up-product__grid{grid-template-columns:1fr;gap:18px}.up-product__info{position:static;padding:24px}.up-product h1{font-size:39px}.up-product__below{grid-template-columns:1fr;gap:18px}.up-product__side-card{padding:24px}.up-product__thumbs{grid-auto-flow:column;grid-auto-columns:82px;grid-template-columns:none;overflow-x:auto;padding-bottom:4px}.up-product__thumb{height:82px}}
+@media(max-width:560px){.up-product{padding:16px 12px 36px}.up-product__stage{border-radius:14px}.up-product__info{padding:20px;border-radius:16px}.up-product h1{font-size:34px}.up-product__price span{font-size:31px}.up-product__buy-row{grid-template-columns:1fr}.up-product__qty{justify-content:space-between}.up-product__trust{grid-template-columns:1fr 1fr}.up-product__tabs summary{padding:18px}.up-product__tabs details>div{padding:0 18px 20px}.up-product__side-card h2{font-size:28px}}
+
+
+/* Premium product detail variant (AquaZen style) */
+.azp{--azp-green:#2f4a35;--azp-green-dark:#1f3527;--azp-ink:#14170f;--azp-line:#e7e4da;--azp-soft:#f6f4ee;max-width:1360px;margin:0 auto;padding:28px 40px 72px;background:#fff;color:var(--azp-ink);font-family:'DM Sans',Arial,sans-serif}
+.azp h1,.azp h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--azp-ink);letter-spacing:-.5px}
+.azp__crumbs{display:flex;align-items:center;gap:8px;margin:0 0 22px;font-size:12px;color:#6d746a}
+.azp__crumbs a{color:inherit;text-decoration:none}
+.azp__crumbs strong{color:var(--azp-ink)}
+.azp__hero{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:44px;align-items:start}
+.azp__gallery{display:grid;grid-template-columns:76px 1fr;gap:14px}
+.azp__thumbs{display:flex;flex-direction:column;gap:12px}
+.azp__thumb{border:1px solid var(--azp-line);border-radius:12px;background:var(--azp-soft);padding:0;width:76px;height:76px;overflow:hidden;cursor:pointer}
+.azp__thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.azp__thumb.is-active{border-color:var(--azp-green);box-shadow:0 0 0 1px var(--azp-green)}
+.azp__stage{position:relative;border-radius:20px;overflow:hidden;background:var(--azp-soft);aspect-ratio:1/1}
+.azp__figure{display:none;margin:0;width:100%;height:100%}
+.azp__figure.is-active{display:block}
+.azp__figure img,.azp__placeholder svg{width:100%;height:100%;object-fit:cover;display:block}
+.azp__zoom{position:absolute;top:16px;right:16px;width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:var(--azp-ink);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 20px #1f2a1720}
+.azp__zoom .az-icon{width:17px;height:17px}
+.azp__info{padding-top:4px}
+.azp__badge{display:inline-block;margin-bottom:12px;border-radius:999px;background:#e7efe4;color:var(--azp-green);padding:6px 14px;font-size:11px;font-weight:800;letter-spacing:.4px}
+.azp h1{font-size:36px;line-height:1.05;margin:0 0 8px}
+.azp__subtitle{margin:0 0 14px;color:#5c6357;line-height:1.5}
+.azp__rating{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:16px}
+.azp__rating span{display:inline-flex;gap:2px;color:#ffb100}
+.azp__rating .az-icon{width:15px;height:15px}
+.azp__rating small{color:#6d746a}
+.azp__price{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 18px}
+.azp__price strong{font-size:32px;letter-spacing:-.6px}
+.azp__price del{font-size:16px;color:#8a9084;font-weight:500}
+.azp__save{border-radius:999px;background:#e7efe4;color:var(--azp-green);padding:5px 11px;font-size:12px;font-weight:800}
+.azp__feature-pills{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:0 0 22px}
+.azp__feature-pill{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;border:1px solid var(--azp-line);border-radius:14px;padding:12px 6px;font-size:11px;font-weight:700;color:#3d443e}
+.azp__feature-pill .az-icon{width:19px;height:19px;color:var(--azp-green)}
+.azp__option{margin:0 0 18px}
+.azp__option-label{margin:0 0 10px;font-weight:800;font-size:14px}
+.azp__option-label span{font-weight:600;color:#5c6357}
+.azp__option-values{display:flex;flex-wrap:wrap;gap:10px}
+.azp__option input{position:absolute;opacity:0}
+.azp__swatch{cursor:pointer}
+.azp__swatch-dot{display:block;width:30px;height:30px;border-radius:50%;background:var(--swatch-color,#ccc);box-shadow:inset 0 0 0 1px #00000022}
+.azp__swatch input:checked+.azp__swatch-dot{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--azp-green)}
+.azp__pill span{display:inline-flex;min-height:42px;align-items:center;border:1px solid var(--azp-line);border-radius:10px;background:#fff;padding:0 18px;font-weight:700;cursor:pointer}
+.azp__pill input:checked+span{border-color:var(--azp-green);color:var(--azp-green);box-shadow:inset 0 0 0 1px var(--azp-green)}
+.azp__buy-row{display:grid;grid-template-columns:120px 1fr;gap:12px;margin-top:6px}
+.azp__qty{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--azp-line);border-radius:999px;padding:0 8px;height:52px}
+.azp__qty button{border:0;background:none;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--azp-ink)}
+.azp__qty .az-icon{width:14px;height:14px}
+.azp__qty input{width:32px;border:0;background:transparent;text-align:center;font:700 14px/1 'DM Sans',Arial,sans-serif}
+.azp__cart{height:52px;border:0;border-radius:999px;background:var(--azp-green);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}
+.azp__cart:hover{background:var(--azp-green-dark)}
+.azp__cart:disabled{opacity:.55;cursor:not-allowed}
+.azp__cart .az-icon{width:19px;height:19px}
+.azp .shopify-payment-button{margin-top:12px}
+.azp .shopify-payment-button__button{min-height:52px!important;border-radius:999px!important;font-weight:800!important}
+.azp__trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;padding-top:20px;border-top:1px solid var(--azp-line)}
+.azp__trust span{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;font-size:11px}
+.azp__trust b{font-size:12px}
+.azp__trust small{color:#7c8277}
+.azp__trust .az-icon{width:18px;height:18px;color:var(--azp-green)}
+.azp__benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;padding:26px 0;border-top:1px solid var(--azp-line);border-bottom:1px solid var(--azp-line)}
+.azp__benefit{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:0 10px}
+.azp__benefit .az-icon{width:26px;height:26px;color:var(--azp-green)}
+.azp__benefit b{font-size:15px}
+.azp__benefit span{font-size:12px;color:#6d746a;line-height:1.4}
+.azp__tabs{margin-top:40px}
+.azp__tabs-nav{display:flex;gap:28px;border-bottom:1px solid var(--azp-line);overflow-x:auto}
+.azp__tabs-nav button{border:0;background:none;padding:0 0 14px;font:700 15px/1 'DM Sans',Arial,sans-serif;color:#7c8277;cursor:pointer;white-space:nowrap;position:relative}
+.azp__tabs-nav button.is-active{color:var(--azp-ink)}
+.azp__tabs-nav button.is-active::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--azp-green)}
+.azp__panel{display:none;padding-top:32px}
+.azp__panel.is-active{display:block}
+.azp__story{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.azp__story h2{font-size:30px;margin:0 0 14px}
+.azp__description{color:#3e453f;line-height:1.65}
+.azp__checklist{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px}
+.azp__checklist li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
+.azp__checklist .az-icon{width:19px;height:19px;color:var(--azp-green);flex:none}
+.azp__story-media{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--azp-soft)}
+.azp__story-media img,.azp__story-media svg{width:100%;height:100%;object-fit:cover;display:block}
+.azp__story-caption{position:absolute;left:22px;bottom:22px;right:22px;color:#fff}
+.azp__story-caption p{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;line-height:1.2;text-shadow:0 2px 12px #00000060}
+.azp__specs{margin:0}
+.azp__specs div{display:grid;grid-template-columns:140px 1fr;gap:10px;padding:13px 0;border-top:1px solid var(--azp-line)}
+.azp__specs div:first-child{border-top:0}
+.azp__specs dt{color:#6d746a}
+.azp__specs dd{margin:0;font-weight:800}
+.azp__richtext{color:#3e453f;line-height:1.65}
+.azp__reviews-summary{display:flex;align-items:center;gap:14px}
+.azp__reviews-summary strong{font-size:44px;font-family:'Cormorant Garamond',Georgia,serif}
+.azp__reviews-summary span{display:inline-flex;gap:2px;color:#ffb100}
+.azp__reviews-summary p{margin:0;color:#6d746a;width:100%}
+.azp__lifestyle{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.azp__lifestyle-tile{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--azp-soft)}
+.azp__lifestyle-tile img,.azp__lifestyle-tile svg{width:100%;height:100%;object-fit:cover;display:block}
+.azp__lifestyle-tile span{position:absolute;left:14px;bottom:14px;color:#fff;font-weight:800;font-size:14px;text-shadow:0 2px 10px #00000060}
+.azp__related{margin-top:52px}
+.azp__related-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px}
+.azp__related-head h2{font-size:28px;margin:0}
+.azp__related-head a{display:inline-flex;align-items:center;gap:6px;color:var(--azp-green);font-weight:800;font-size:13px;text-decoration:none}
+.azp__related-head .az-icon{width:14px;height:14px}
+.azp__related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.azp__related-card{display:block;text-decoration:none;color:inherit}
+.azp__related-image{border-radius:14px;overflow:hidden;aspect-ratio:1/1;background:var(--azp-soft);margin-bottom:12px}
+.azp__related-image img,.azp__related-image svg{width:100%;height:100%;object-fit:cover;display:block}
+.azp__related-card b{display:block;font-size:14px;font-weight:700}
+.azp__related-card span{display:block;margin-top:4px;color:#6d746a;font-weight:700;font-size:13px}
+.azp__lightbox{position:fixed;inset:0;z-index:999;background:#000000cc;display:flex;align-items:center;justify-content:center;padding:40px}
+.azp__lightbox[hidden]{display:none}
+.azp__lightbox img{max-width:100%;max-height:100%;border-radius:12px}
+.azp__lightbox-close{position:absolute;top:24px;right:24px;width:40px;height:40px;border:0;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.azp__lightbox-close .az-icon{width:18px;height:18px}
+@media(max-width:1100px){
+  .azp{padding:22px 20px 56px}
+  .azp__hero{grid-template-columns:1fr;gap:26px}
+  .azp__benefits,.azp__feature-pills{grid-template-columns:repeat(2,1fr)}
+  .azp__lifestyle,.azp__related-grid{grid-template-columns:repeat(2,1fr)}
+  .azp__story{grid-template-columns:1fr}
+  .azp__story-media{aspect-ratio:16/9}
+}
+@media(max-width:640px){
+  .azp{padding:16px 14px 44px}
+  .azp__crumbs{overflow:hidden;white-space:nowrap}
+  .azp__gallery{grid-template-columns:1fr}
+  .azp__thumbs{flex-direction:row;overflow-x:auto}
+  .azp__thumb{flex:none}
+  .azp h1{font-size:29px}
+  .azp__price strong{font-size:27px}
+  .azp__buy-row{grid-template-columns:1fr}
+  .azp__trust{grid-template-columns:1fr}
+  .azp__tabs-nav{gap:18px}
+  .azp__tabs-nav button{font-size:13px}
+}
