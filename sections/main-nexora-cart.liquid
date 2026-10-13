@@ -1,0 +1,16 @@
+<section class="nxc nx-container" aria-labelledby="nxc-title">
+  <nav class="nxc-breadcrumb" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span><span>Cart</span></nav>
+  <header class="nxc-page-heading"><p class="nx-kicker">YOUR SELECTION</p><h1 id="nxc-title">Shopping Cart</h1></header>
+  {% if cart.item_count == 0 %}<div class="nxc-empty"><h2>Your cart is empty</h2><p>Explore the collection and find something you love.</p><a class="nxc-button" href="{{ routes.all_products_collection_url }}">Continue Shopping {% render 'az-icon', name: 'arrow-right' %}</a></div>
+  {% else %}
+    <form class="nxc-cart" action="{{ routes.cart_url }}" method="post">
+      <div class="nxc-cart__items">
+        {% for item in cart.items %}
+          <div class="nxc-cart__item"><a class="nxc-cart__image" href="{{ item.url }}">{% if item.image != blank %}{{ item.image | image_url: width: 300 | image_tag: loading: 'lazy', alt: item.title }}{% else %}{{ 'product-1' | placeholder_svg_tag }}{% endif %}</a><div class="nxc-cart__details"><a href="{{ item.url }}">{{ item.product.title | escape }}</a>{% unless item.variant.title == 'Default Title' %}<small>{{ item.variant.title | escape }}</small>{% endunless %}<a class="nxc-cart__remove" href="{{ item.url_to_remove }}">Remove</a></div><label class="nxc-cart__quantity">Qty <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity for {{ item.product.title | escape }}"></label><strong>{{ item.final_line_price | money }}</strong></div>
+        {% endfor %}
+      </div>
+      <aside class="nxc-cart__summary"><h2>Order Summary</h2><p><span>Subtotal</span><strong>{{ cart.total_price | money }}</strong></p><small>Shipping and taxes calculated at checkout.</small><button class="nxc-button" type="submit" name="update">Update Cart</button><button class="nxc-button" type="submit" name="checkout">Checkout {% render 'az-icon', name: 'arrow-right' %}</button><a href="{{ routes.all_products_collection_url }}">Continue Shopping</a></aside>
+    </form>
+  {% endif %}
+</section>
+{% schema %}{"name":"Shopping cart","settings":[],"presets":[{"name":"Shopping cart"}]}{% endschema %}

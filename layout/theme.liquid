@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     {{ content_for_header }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {% if request.page_type == 'index' %}{{ 'nexora-home.css' | asset_url | stylesheet_tag }}{% endif %}
+    {{ 'nexora-home.css' | asset_url | stylesheet_tag }}
+    {{ 'nexora-catalog.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
     {% sections 'header-group' %}

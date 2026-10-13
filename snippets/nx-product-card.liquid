@@ -1,0 +1,13 @@
+{% assign card_product = product %}
+<article class="nxc-product">
+  <a class="nxc-product__media" href="{{ card_product.url }}">
+    {% if card_product.featured_image != blank %}
+      {{ card_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: card_product.featured_image.alt, sizes: '(min-width: 1000px) 25vw, (min-width: 600px) 33vw, 50vw' }}
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag }}
+    {% endif %}
+    {% unless card_product.available %}<span class="nxc-product__badge">Sold out</span>{% endunless %}
+  </a>
+  <a class="nxc-product__name" href="{{ card_product.url }}">{{ card_product.title | escape }}</a>
+  <p class="nxc-product__price">{{ card_product.price | money }}{% if card_product.compare_at_price > card_product.price %}<s>{{ card_product.compare_at_price | money }}</s>{% endif %}</p>
+</article>

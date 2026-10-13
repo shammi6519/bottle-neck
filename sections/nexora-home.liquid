@@ -27,8 +27,10 @@
     {% for block in section.blocks %}
       {% if block.type == 'category' %}
         {% liquid
-          assign category_link = block.settings.collection.url | default: shop_link
-          assign category_image = block.settings.image | default: block.settings.collection.image
+          assign category_handle = block.settings.title | handleize
+          assign category_collection = block.settings.collection | default: collections[category_handle]
+          assign category_link = category_collection.url | default: routes.collections_url
+          assign category_image = block.settings.image | default: category_collection.image
           assign fallback_name = 'nexora-watch.webp'
           case forloop.index
             when 2
@@ -107,7 +109,9 @@
                 when 4
                   assign fallback_name = 'nexora-bottle.webp'
               endcase
-              assign category_link = block.settings.collection.url | default: shop_link
+              assign category_handle = block.settings.title | handleize
+              assign category_collection = block.settings.collection | default: collections[category_handle]
+              assign category_link = category_collection.url | default: routes.collections_url
             %}
             <article class="nx-product"><a class="nx-product__image" href="{{ category_link }}"><img src="{{ fallback_name | asset_url }}" alt="" width="627" height="627" loading="lazy"></a><a class="nx-product__title" href="{{ category_link }}">Explore {{ block.settings.title | escape }}</a></article>
           {% endif %}

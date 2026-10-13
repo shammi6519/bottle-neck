@@ -1,0 +1,16 @@
+<section class="nxc nx-container" aria-labelledby="nxc-title">
+  <nav class="nxc-breadcrumb" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span><span>Collections</span></nav>
+  <header class="nxc-page-heading"><p class="nx-kicker">EXPLORE OUR EDIT</p><h1 id="nxc-title">Shop by Category</h1><p>Find the products that fit your everyday.</p></header>
+  <div class="nxc-collection-grid">
+    <a class="nxc-collection-card" href="{{ routes.all_products_collection_url }}"><span class="nxc-collection-card__media"><img src="{{ 'nexora-hero.webp' | asset_url }}" alt="" width="1983" height="793" loading="lazy"></span><span class="nxc-collection-card__label">All Products {% render 'az-icon', name: 'arrow-right' %}</span></a>
+    {% paginate collections by 24 %}
+      {% for category in collections %}
+        {% unless category.handle == 'all' %}
+          <a class="nxc-collection-card" href="{{ category.url }}"><span class="nxc-collection-card__media">{% assign category_image = category.image | default: category.products.first.featured_image %}{% if category_image != blank %}{{ category_image | image_url: width: 900 | image_tag: loading: 'lazy', alt: category.title }}{% else %}{{ 'collection-1' | placeholder_svg_tag }}{% endif %}</span><span class="nxc-collection-card__label">{{ category.title | escape }} {% render 'az-icon', name: 'arrow-right' %}</span></a>
+        {% endunless %}
+      {% endfor %}
+      {% render 'nx-pagination', paginate: paginate %}
+    {% endpaginate %}
+  </div>
+</section>
+{% schema %}{"name":"All collections","settings":[],"presets":[{"name":"All collections"}]}{% endschema %}

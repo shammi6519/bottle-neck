@@ -1,0 +1,23 @@
+<section class="nxc nxc-collection nx-container" aria-labelledby="nxc-title">
+  <nav class="nxc-breadcrumb" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span><a href="{{ routes.collections_url }}">Collections</a><span aria-hidden="true">/</span><span>{{ collection.title | escape }}</span></nav>
+  <header class="nxc-intro">
+    <div><p class="nx-kicker">THE COLLECTION</p><h1 id="nxc-title">{% if collection.handle == 'all' %}All Products{% else %}{{ collection.title | escape }}{% endif %}</h1>{% if collection.description != blank %}<div class="nxc-intro__description">{{ collection.description }}</div>{% endif %}</div>
+    {% if collection.image != blank %}{{ collection.image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'nxc-intro__image', alt: collection.title }}{% endif %}
+  </header>
+  <nav class="nxc-category-nav" aria-label="Product categories">
+    <a href="{{ routes.all_products_collection_url }}"{% if collection.handle == 'all' %} aria-current="page"{% endif %}>All Products</a>
+    {% if section.settings.category_menu != blank %}{% for link in section.settings.category_menu.links %}<a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>{% endfor %}{% endif %}
+    <a href="{{ routes.collections_url }}">Browse Categories {% render 'az-icon', name: 'arrow-right' %}</a>
+  </nav>
+  {% paginate collection.products by section.settings.products_per_page %}
+    <div class="nxc-toolbar"><p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %}</p>
+      <form action="{{ collection.url }}" method="get"><label for="nxc-sort">Sort by</label><select id="nxc-sort" name="sort_by" onchange="this.form.submit()">{% for option in collection.sort_options %}<option value="{{ option.value | escape }}"{% if option.value == collection.sort_by %} selected{% endif %}>{{ option.name | escape }}</option>{% endfor %}</select></form>
+    </div>
+    {% if collection.products.size > 0 %}<div class="nxc-grid">{% for product in collection.products %}{% render 'nx-product-card', product: product %}{% endfor %}</div>
+    {% else %}<div class="nxc-empty"><h2>No products here yet</h2><p>Browse all products or another category.</p><a class="nxc-button" href="{{ routes.all_products_collection_url }}">Shop All Products {% render 'az-icon', name: 'arrow-right' %}</a></div>{% endif %}
+    {% render 'nx-pagination', paginate: paginate %}
+  {% endpaginate %}
+</section>
+{% schema %}
+{"name":"Collection products","settings":[{"type":"link_list","id":"category_menu","label":"Category menu"},{"type":"range","id":"products_per_page","label":"Products per page","min":8,"max":24,"step":4,"default":12}],"presets":[{"name":"Collection products"}]}
+{% endschema %}

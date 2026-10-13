@@ -1,4 +1,3 @@
-{% if request.page_type == 'index' %}
 <div class="nx-announcement"><span>{{ section.settings.announcement_text | escape }}</span></div>
 <header class="nx-header">
   <div class="nx-header__inner nx-container">
@@ -7,23 +6,14 @@
       {% if section.settings.menu != blank %}
         {% for link in section.settings.menu.links %}<a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>{% endfor %}
       {% else %}
-        <a href="{{ routes.root_url }}" aria-current="page">Home</a><a href="{{ routes.all_products_collection_url }}">Shop</a><a href="#categories">Collections</a>{% if section.settings.about_link != blank %}<a href="{{ section.settings.about_link }}">About</a>{% elsif pages['about-us'] != blank %}<a href="{{ pages['about-us'].url }}">About</a>{% endif %}{% if section.settings.contact_link != blank %}<a href="{{ section.settings.contact_link }}">Contact</a>{% elsif pages['contact'] != blank %}<a href="{{ pages['contact'].url }}">Contact</a>{% endif %}
+        <a href="{{ routes.root_url }}"{% if request.page_type == 'index' %} aria-current="page"{% endif %}>Home</a><a href="{{ routes.all_products_collection_url }}"{% if collection.handle == 'all' %} aria-current="page"{% endif %}>Shop</a><a href="{{ routes.collections_url }}"{% if request.page_type == 'list-collections' %} aria-current="page"{% endif %}>Collections</a>{% if section.settings.about_link != blank %}<a href="{{ section.settings.about_link }}">About</a>{% elsif pages['about-us'] != blank %}<a href="{{ pages['about-us'].url }}">About</a>{% endif %}{% if section.settings.contact_link != blank %}<a href="{{ section.settings.contact_link }}">Contact</a>{% elsif pages['contact'] != blank %}<a href="{{ pages['contact'].url }}">Contact</a>{% endif %}
       {% endif %}
     </nav>
     <div class="nx-header__actions">
-      <details class="nx-search"><summary aria-label="Open search">{% render 'az-icon', name: 'search' %}</summary><form action="{{ routes.search_url }}" method="get" role="search"><input type="search" name="q" placeholder="Search products" aria-label="Search products"><button type="submit" aria-label="Submit search">{% render 'az-icon', name: 'search' %}</button></form></details>
+      <details class="nx-search"><summary aria-label="Open search">{% render 'az-icon', name: 'search' %}</summary><form action="{{ routes.search_url }}" method="get" role="search"><input type="search" name="q" placeholder="Search products" aria-label="Search products"><input type="hidden" name="type" value="product"><button type="submit" aria-label="Submit search">{% render 'az-icon', name: 'search' %}</button></form></details>
       {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="Account">{% render 'az-icon', name: 'user' %}</a>{% endif %}
       <a class="nx-header__cart" href="{{ routes.cart_url }}" aria-label="Cart, {{ cart.item_count }} items">{% render 'az-icon', name: 'cart' %}{% if cart.item_count > 0 %}<span>{{ cart.item_count }}</span>{% endif %}</a>
     </div>
   </div>
 </header>
-{% else %}
-<header class="site-header">
-  <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }} home">{% render 'az-icon', name: 'brand', class: 'brand-mark' %}Aqua<span>Zen</span></a>
-  <nav class="main-nav" aria-label="Main navigation">
-    {% if section.settings.menu != blank %}{% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}{% else %}<a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#sustainability">Sustainability</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>{% endif %}
-  </nav>
-  <div class="header-actions"><button class="header-icon" type="button" aria-label="Search">{% render 'az-icon', name: 'search' %}</button><a class="cart" href="{{ routes.cart_url }}" aria-label="Cart">{% render 'az-icon', name: 'cart' %}<sup>{{ cart.item_count }}</sup></a><a class="button button--small" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a></div>
-</header>
-{% endif %}
 {% schema %}{"name":"Header","settings":[{"type":"link_list","id":"menu","label":"Menu"},{"type":"text","id":"home_brand","label":"Homepage brand","default":"Nexora"},{"type":"text","id":"announcement_text","label":"Announcement","default":"Free shipping on orders over $50 | 30-day hassle-free returns"},{"type":"url","id":"about_link","label":"About link"},{"type":"url","id":"contact_link","label":"Contact link"},{"type":"text","id":"button_label","label":"Button label","default":"Shop Now"},{"type":"url","id":"button_link","label":"Button link"}]}{% endschema %}
