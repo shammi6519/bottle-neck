@@ -1,18 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "storefront": {
       "type": "nexora-home",
-      "settings": {},
       "blocks": {
-        "watches": {"type":"category","settings":{"title":"Smart Watches"}},
-        "earbuds": {"type":"category","settings":{"title":"Earbuds"}},
-        "accessories": {"type":"category","settings":{"title":"Accessories"}},
-        "lifestyle": {"type":"category","settings":{"title":"Lifestyle"}}
+        "watches": {
+          "type": "category",
+          "settings": {
+            "title": "Smart Watches",
+            "collection": ""
+          }
+        },
+        "earbuds": {
+          "type": "category",
+          "settings": {
+            "title": "Earbuds",
+            "collection": ""
+          }
+        },
+        "accessories": {
+          "type": "category",
+          "settings": {
+            "title": "Accessories",
+            "collection": ""
+          }
+        },
+        "lifestyle": {
+          "type": "category",
+          "settings": {
+            "title": "Lifestyle",
+            "collection": ""
+          }
+        }
       },
-      "block_order": ["watches","earbuds","accessories","lifestyle"]
+      "block_order": [
+        "watches",
+        "earbuds",
+        "accessories",
+        "lifestyle"
+      ],
+      "settings": {
+        "hero_eyebrow": "PREMIUM · MINIMAL · TIMELESS",
+        "hero_heading": "Elevate Your\nEveryday Style",
+        "hero_text": "Discover thoughtfully designed essentials that blend modern aesthetics with everyday functionality.",
+        "hero_button": "Shop Now",
+        "shop_link": "",
+        "featured_collection": "",
+        "featured_eyebrow": "FEATURED PRODUCTS",
+        "featured_heading": "Best Sellers",
+        "offer_eyebrow": "LIMITED TIME OFFER",
+        "offer_heading": "Up to 40% Off\nTop Picks",
+        "offer_text": "Upgrade your essentials with exclusive savings — for a limited time only.",
+        "offer_button": "Shop Sale",
+        "offer_link": ""
+      }
+    },
+    "179196149161c23ba6": {
+      "type": "apps",
+      "blocks": {
+        "buchgluck_configurator_configurator_iGKE4Q": {
+          "type": "shopify://apps/buchgluck-configurator/blocks/configurator/01a13939-08a9-72d2-bd12-ffd097dd4f96",
+          "settings": {
+            "starting_book": "choose",
+            "biography_product": "",
+            "novel_product_handle": "",
+            "api_mode": "mock"
+          }
+        }
+      },
+      "block_order": [
+        "buchgluck_configurator_configurator_iGKE4Q"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "storefront"
+    "storefront",
+    "179196149161c23ba6"
   ]
 }
